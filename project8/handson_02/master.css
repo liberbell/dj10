@@ -12,3 +12,8 @@ div{
 p{
     color: yellow;
 }
+
+span{
+    background: red;
+    color: black;
+}
