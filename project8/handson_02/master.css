@@ -4,7 +4,11 @@ body{
 
 div{
     background-color: blue;
-    border-color: red;
-    border-width: thick;
+    border-color: orange;
+    border-width: 4px;
     border-style: dotted;
+}
+
+p{
+    color: yellow;
 }
