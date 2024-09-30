@@ -1,5 +1,6 @@
 body{
     background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Town_and_Country_fh000023.jpg/1280px-Town_and_Country_fh000023.jpg);
+    background-repeat: no-repeat;
 }
 
 div{
