@@ -9,3 +9,7 @@ h1{
 h2{
     color: purple;
 }
+
+input{
+    border: 2px solid rgb(144, 0, 0);
+}
