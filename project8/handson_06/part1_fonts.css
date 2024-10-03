@@ -1,5 +1,5 @@
 h1{
-    font-family: cursive;
+    font-family: "Arial";
 }
 
 p{
@@ -7,5 +7,9 @@ p{
 }
 
 body{
-    font-size: 30px;
+    font-size: 10px;
+}
+
+#two{
+    font-size: 2em;
 }
