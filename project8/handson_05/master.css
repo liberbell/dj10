@@ -32,3 +32,8 @@ a{
     text-decoration: overline;
     color: purple;
 }
+
+.exit{
+    background-color: blue;
+    border: 4px dashed yellow;
+}
