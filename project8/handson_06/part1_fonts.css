@@ -5,3 +5,7 @@ h1{
 p{
     font-family: monospace;
 }
+
+body{
+    font-size: 30px;
+}
