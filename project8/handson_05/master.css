@@ -23,3 +23,12 @@ div p{
     width: 800px;
     height: 400px;
 }
+
+a{
+    color: red;
+}
+
+#itemone{
+    text-decoration: overline;
+    color: purple;
+}
