@@ -37,3 +37,7 @@ a{
     background-color: blue;
     border: 4px dashed yellow;
 }
+
+a:visited{
+    color: blue;
+}
