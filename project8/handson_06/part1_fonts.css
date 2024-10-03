@@ -13,3 +13,7 @@ body{
 #two{
     font-size: 2em;
 }
+
+p{
+    font-style: italic;
+}
