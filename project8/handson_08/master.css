@@ -8,6 +8,7 @@ td{
     background-color: black;
     height: 300px;
     width: 150px;
+    border: 6px solid white;
 }
 #one{
     background-color: #dad2d8;
