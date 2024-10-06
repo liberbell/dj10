@@ -13,3 +13,12 @@ p{
     padding-left: 20%;
     padding-right: 20%;
 }
+
+form{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#sub{
+    background-color: #ff9f1c;
+}
