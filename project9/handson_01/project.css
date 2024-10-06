@@ -7,3 +7,9 @@ body{
     border-top: 0px;
     margin: 0px;
 }
+
+p{
+    padding: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
