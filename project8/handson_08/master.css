@@ -1,8 +1,11 @@
 h1{
     text-align: center;
 }
+.art{
+    margin: auto;
+}
 td{
     background-color: black;
-    height: 300;
+    height: 300px;
     width: 150px;
 }
