@@ -2,4 +2,6 @@ body{
     font-family: "Sansita", sans-serif;
     background-color: #011627;
     color: #fdfffc;
+    text-align: center;
+    border: 40px solid #2ec486;
 }
