@@ -5,9 +5,7 @@
 var hot = false
 var temp = 100
 
-if (true > 80) {
-    hot = true
-    console.log("Temperature is greater than 80");
-    
+if (temp > 80) {
+    hot = true  
 }
 console.log();
