@@ -38,6 +38,7 @@ while (x < 5) {
     
     if (x === 3) {
         console.log("x is equal to 3");
+        break;
         
     }
     console.log("x is still less than 5. Adding 1 to x");
