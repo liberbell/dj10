@@ -53,7 +53,14 @@
 //     num = num + 1;
 // }
 
-for (var i = 0; i < 5 ; i++){
-    console.log("Number is "+i);
+// for (var i = 0; i < 5 ; i++){
+//     console.log("Number is "+i);
+    
+// }
+
+var word = "ABCDEFGHIJK"
+
+for (var i = 0; i < word.length; i++) {
+    word[i];
     
 }
