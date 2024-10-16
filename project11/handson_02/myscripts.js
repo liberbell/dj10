@@ -61,6 +61,6 @@
 var word = "ABCDEFGHIJK"
 
 for (var i = 0; i < word.length; i++) {
-    word[i];
+    console.log(word[i]);
     
 }
