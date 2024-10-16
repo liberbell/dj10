@@ -52,3 +52,7 @@
 //     }
 //     num = num + 1;
 // }
+
+for (var i = 0; i < array.ength ; i++){
+    array[i]
+}
