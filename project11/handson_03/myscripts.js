@@ -10,14 +10,14 @@
     
 // }
 
-var num = 1;
-while (num < 25) {
-    if (num%2 !== 0) {
-        console.log(num);
+// var num = 1;
+// while (num < 25) {
+//     if (num%2 !== 0) {
+//         console.log(num);
         
-    }
-    num++
-}
+//     }
+//     num++
+// }
 
 for (var i = 0; i < 5; i++) {
     if (i%2 !== 0) {
