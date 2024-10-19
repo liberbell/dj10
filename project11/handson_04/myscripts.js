@@ -27,3 +27,9 @@ if (height >= 170 ) {
 } else {
     heightCond = false
 }
+
+if (petName[petName.length-1] === "y") {
+    petCond = true
+} else {
+    petCond = false
+}
