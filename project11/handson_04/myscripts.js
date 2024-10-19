@@ -16,7 +16,7 @@ if (firstName[0] === lastName[0]) {
     nameCond = false;
 }
 
-if (age > 20 && age < 30) {
+if (Age > 20 && age < 30) {
     ageCond = true;4
 } else {
     ageCond = false;
