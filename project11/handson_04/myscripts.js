@@ -12,4 +12,10 @@ var petCond = null;
 
 if (firstName[0] === lastName[0]) {
     nameCond = true;
+} else {
+    nameCond = false;
+}
+
+if (age > 20 && age < 30) {
+    ageCond = true;
 }
