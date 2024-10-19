@@ -18,4 +18,12 @@ if (firstName[0] === lastName[0]) {
 
 if (age > 20 && age < 30) {
     ageCond = true;4
+} else {
+    ageCond = false;
+}
+
+if (height >= 170 ) {
+    heightCond = true
+} else {
+    heightCond = false
 }
