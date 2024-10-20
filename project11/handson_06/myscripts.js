@@ -1,13 +1,18 @@
 function sleepIn(weekday, vacation) {
-    return (!weekday || vacation)
+    return (!weekday || vacation);
 }
 
 function monkeyTrouble(aSmile, bSmile) {
-    
+    return (aSmile && bSmile) || (!aSmile && !bSmile);
 }
 
 function stringTimes(str, n) {
-    
+    var retrunSTR = "";
+    var i = 0;
+    while (i < n) {
+        retrunSTR += str;
+        i ++;
+    }
 }
 
 function luckySum(a, b, c) {
