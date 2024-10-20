@@ -13,6 +13,7 @@ function stringTimes(str, n) {
         retrunSTR += str;
         i ++;
     }
+    return retrunSTR;
 }
 
 function luckySum(a, b, c) {
