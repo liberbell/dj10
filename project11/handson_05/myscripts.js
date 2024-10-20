@@ -26,3 +26,13 @@ function fiveTimes(numinput) {
     var result = numinput * 5
     return result
 }
+
+var v = " GLOBAL V"
+var stuff = "GLOBAL stuff"
+
+function fun(stuff) {
+    console.log(v);
+    stuff = "Reassign stuff inside function"
+    console.log(stuff);
+    
+}
