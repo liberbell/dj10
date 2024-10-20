@@ -26,6 +26,7 @@ function luckySum(a, b, c) {
     if (c == 13) {
         return a + b;
     }
+    return a + b + c;
 }
 
 function caught_speeding(speed, is_birthday) {
