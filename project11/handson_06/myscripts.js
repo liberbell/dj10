@@ -17,7 +17,9 @@ function stringTimes(str, n) {
 }
 
 function luckySum(a, b, c) {
-    
+    if (a == 13) {
+        return 0
+    }
 }
 
 function caught_speeding(speed, is_birthday) {
