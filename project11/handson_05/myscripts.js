@@ -17,3 +17,8 @@ function helloSomeone(name="James") {
     console.log("Hello " + name);
     
 }
+
+function formal(name="James", title="Sir") {
+    console.log(title + " " + name);
+    
+}
