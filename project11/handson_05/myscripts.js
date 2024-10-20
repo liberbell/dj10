@@ -21,3 +21,8 @@ function helloSomeone(name="James") {
 function formal(name="James", title="Sir") {
     return title + " " + name  
 }
+
+function fiveTimes(numinput) {
+    var result = numinput * 5
+    return result
+}
