@@ -32,9 +32,11 @@ var stuff = "GLOBAL stuff"
 
 function fun(stuff) {
     console.log(v);
+    console.log(stuff);
     stuff = "Reassign stuff inside function"
     console.log(stuff);
     
 }
 
 fun()
+console.log(stuff);
