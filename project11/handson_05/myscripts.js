@@ -19,6 +19,5 @@ function helloSomeone(name="James") {
 }
 
 function formal(name="James", title="Sir") {
-    console.log(title + " " + name);
-    
+    return title + " " + name  
 }
