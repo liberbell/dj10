@@ -28,6 +28,9 @@ if (start === "y") {
             display();
         } else if (request === "remove") {
             remove();
+        } else {
+            alert("Not recognized action: "+request);
+            // request = "quit";
         }
     }
 }
