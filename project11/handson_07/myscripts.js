@@ -10,3 +10,8 @@ function remove() {
     var index = roster.indexOf(remName);
     roster.splice(index, 1);
 }
+
+function display() {
+    console.log(roster);
+    
+}
