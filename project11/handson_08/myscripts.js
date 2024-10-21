@@ -7,3 +7,12 @@ var employee = {
         
     }
 }
+
+var employee = {
+    name: "james Bond",
+    job: "spy",
+    age: 48,
+    report: function() {
+        alert("Name is"+this.name+", Job is"+this.job+", Age is"+this.age)
+    }
+}
