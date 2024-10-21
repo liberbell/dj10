@@ -26,6 +26,9 @@ if (start === "y") {
             addNew();
         } else if (request === "display") {
             display();
+        } else if (request === "remove") {
+            remove();
         }
     }
 }
+alert("Thnaks for using the Web app. Please refresh start over.");
