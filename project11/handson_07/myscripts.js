@@ -16,16 +16,16 @@ function display() {
     
 }
 
-var start = prompt("Would you like to start the roster web app y/n?")
-var request = "empty"
+var start = prompt("Would you like to start the roster web app y/n?");
+var request = "empty";
 
 if (start === "y") {
     while (request !== "quit") {
-        request = prompt("Please select an action: add, remove, display, or quit.")
+        request = prompt("Please select an action: add, remove, display, or quit.");
         if (request === "add") {
-            addNew()
+            addNew();
         } else if (request === "display") {
-            display()
+            display();
         }
     }
 }
