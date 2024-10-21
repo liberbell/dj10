@@ -15,3 +15,6 @@ function display() {
     console.log(roster);
     
 }
+
+var start = prompt("Would you like to start the roster web app y/n?")
+var request = "empty"
