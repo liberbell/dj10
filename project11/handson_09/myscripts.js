@@ -9,3 +9,8 @@ function clearBoard() {
     }
 }
 restart.addEventListener('click', clearBoard);
+
+var callOne = document.querySelector('#one');
+callOne.addEventListener('click', function() {
+    callOne.textContent = "X";
+})
