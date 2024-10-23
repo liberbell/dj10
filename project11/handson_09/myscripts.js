@@ -1,1 +1,1 @@
-console.log("Connected!");
+var restart = document.querySelector("#b")
