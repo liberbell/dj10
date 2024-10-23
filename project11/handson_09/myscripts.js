@@ -10,7 +10,11 @@ function clearBoard() {
 }
 restart.addEventListener('click', clearBoard);
 
-var callOne = document.querySelector('#one');
-callOne.addEventListener('click', function() {
-    callOne.textContent = "X";
+var cellOne = document.querySelector('#one');
+cellOne.addEventListener('click', function() {
+    if (cellOne.textContent === "") {
+        cellOne.textContent = "X";   
+    } else if (cellOne.textContent === "X") {
+        cellOne.textContent = "o"
+    }
 })
