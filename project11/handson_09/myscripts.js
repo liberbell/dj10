@@ -10,11 +10,19 @@ function clearBoard() {
 }
 restart.addEventListener('click', clearBoard);
 
+function changeMarker() {
+    if (this.textContent === '') {
+        this.textContent = 'X'
+    }
+}
+
 var cellOne = document.querySelector('#one');
 cellOne.addEventListener('click', function() {
     if (cellOne.textContent === "") {
         cellOne.textContent = "X";   
     } else if (cellOne.textContent === "X") {
-        cellOne.textContent = "o"
+        cellOne.textContent = "o";
+    } else {
+        cellOne.textContent = "";
     }
 })
