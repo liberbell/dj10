@@ -15,6 +15,8 @@ function changeMarker() {
         this.textContent = 'X';
     } else if (this.textContent === 'X') {
         this.textContent = 'O';
+    } else {
+        this.textContent = '';
     }
 }
 
