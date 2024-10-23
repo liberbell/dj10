@@ -1,4 +1,4 @@
-var restart = document.querySelector("#b");
+var restart = document.querySelector("#abc");
 
 var squares = document.querySelectorAll("td");
 
