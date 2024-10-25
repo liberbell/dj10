@@ -20,13 +20,6 @@ function changeMarker() {
     }
 }
 
-var cellOne = document.querySelector('#one');
-cellOne.addEventListener('click', function() {
-    if (cellOne.textContent === "") {
-        cellOne.textContent = "X";   
-    } else if (cellOne.textContent === "X") {
-        cellOne.textContent = "o";
-    } else {
-        cellOne.textContent = "";
-    }
-})
+for (i = 0; i < squares.length; i++) {
+    squares[i].addEventListener('click', changeMarker);
+}
