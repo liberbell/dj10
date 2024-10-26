@@ -20,5 +20,5 @@
 // })
 
 $("input").eq(0).on("click", function() {
-    $(".container").fadeout(3000)
+    $(".container").fadeOut(3000)
 })
