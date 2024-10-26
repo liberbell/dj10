@@ -15,6 +15,6 @@
 //     }
 // })
 
-$("h1").on("dblclick", function() {
+$("h1").on("mouseenter", function() {
     $(this).toggleClass("turnBlue")
 })
