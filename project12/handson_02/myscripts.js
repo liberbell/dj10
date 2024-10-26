@@ -15,6 +15,10 @@
 //     }
 // })
 
-$("h1").on("mouseenter", function() {
-    $(this).toggleClass("turnBlue")
+// $("h1").on("mouseenter", function() {
+//     $(this).toggleClass("turnBlue")
+// })
+
+$("input").eq(0).on("click", function() {
+    $(".container").fadeout(3000)
 })
