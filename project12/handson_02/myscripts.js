@@ -7,6 +7,10 @@ $("li").click(function() {
     
 })
 
-$("input").eq(0).keypress(function() {
+$("input").eq(0).keypress(function(event) {
     $("h3").toggleClass("turnBlue");
+    console.log(event);
+    if (event.which === 13) {
+        $("h3").toggleClass("turnRed");
+    }
 })
