@@ -14,9 +14,16 @@ function reportWin(rowNum, colNum) {
 }
 
 function changeColor(rowIndex, colIndex, color) {
-    return table.eq(rowIndex).find("td").eq(colIndex).find("button").css("background-color", color)
+    return table.eq(rowIndex).find("td").eq(colIndex).find("button").css("background-color", color);
 }
 
 function returnColor(rowIndex, colIndex) {
-    return table.eq(rowIndex).find("td").eq(colIndex).find("button").css("background-color")
+    return table.eq(rowIndex).find("td").eq(colIndex).find("button").css("background-color");
+}
+
+function checkBotton(colIndex) {
+    var colorReport = returnColor(5, colIndex);
+    for (var row = 5; row > -1; row--) {
+        colorReport = returnColor(row, colIndex);
+    }
 }
