@@ -26,7 +26,11 @@ function checkBotton(colIndex) {
     for (var row = 5; row > -1; row--) {
         colorReport = returnColor(row, colIndex);
         if (colorReport === "rgb(128, 128, 128)") {
-            return row
+            return row;
         }
     }
+}
+
+function colorMatchCheck(one, two, three, four) {
+    return (one === two && one === three && one === four && one !== "rgb(128, 128, 128)");
 }
