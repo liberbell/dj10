@@ -16,3 +16,7 @@ function reportWin(rowNum, colNum) {
 function changeColor(rowIndex, colIndex, color) {
     return table.eq(rowIndex).find("td").eq(colIndex).find("button").css("background-color", color)
 }
+
+function returnColor(rowIndex, colIndex) {
+    return table.eq(rowIndex).find("td").eq(colIndex).find("button").css("background-color")
+}
