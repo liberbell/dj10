@@ -25,5 +25,8 @@ function checkBotton(colIndex) {
     var colorReport = returnColor(5, colIndex);
     for (var row = 5; row > -1; row--) {
         colorReport = returnColor(row, colIndex);
+        if (colorReport === "rgb(128, 128, 128)") {
+            return row
+        }
     }
 }
