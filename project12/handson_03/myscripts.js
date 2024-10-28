@@ -53,7 +53,7 @@ function verticalWinCheck() {
     for (var col = 0; col < 7; col++){ 
         for (var row = 0; row < 3; row++){
             if (colorMatchCheck(returnColor(row, col), returnColor(row + 1, col), returnColor(row + 2, col))) {
-                console.log("horiz");
+                console.log("vertical");
                 reportWin(row, col);
                 return true;
             } else {
