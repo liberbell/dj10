@@ -39,7 +39,9 @@ function horizontalWinCheck() {
     for (var row = 0; row < 6; row++){ 
         for (var col = 0; col < 4; col++){
             if (colorMatchCheck(returnColor(row, col), returnColor(row, col + 1), returnColor(row, col + 2))) {
-                
+                console.log("horiz");
+                reportWin(row, col);
+                return true;
             }
         }
     }
