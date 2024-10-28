@@ -42,7 +42,13 @@ function horizontalWinCheck() {
                 console.log("horiz");
                 reportWin(row, col);
                 return true;
+            } else {
+                continue;
             }
         }
     }
+}
+
+function verticalWinCheck() {
+    
 }
