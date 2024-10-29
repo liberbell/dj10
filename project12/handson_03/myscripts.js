@@ -85,7 +85,7 @@ var currentPlayer = 1;
 var currentName = player1;
 var currentColor = player1Color;
 
-$("h3").text(player1+" it is your turn, pick a column to drop in!")
+$("h3").text(player1+" it is your turn, pick a column to drop in!");
 
 $(".border button").on("click", function() {
     
@@ -94,6 +94,8 @@ $(".border button").on("click", function() {
     changeColor(bottomAvail, col, currentColor);
 
     if (horizontalWinCheck() || verticalWinCheck() || digonalWinCheck()) {
-        
+        $("h1").text(currentName + " You have won!");
+        $("h3").fadeout("fast");
+
     }
 })
