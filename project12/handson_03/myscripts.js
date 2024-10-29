@@ -70,7 +70,7 @@ function digonalWinCheck() {
                 console.log("vertical");
                 reportWin(row, col);
                 return true;
-            } else if (colorMatchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2)) {
+            } else if (colorMatchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2))) {
                 console.log("diag");
                 reportWin(row, col);
                 return true;
