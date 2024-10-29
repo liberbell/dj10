@@ -96,6 +96,16 @@ $(".border button").on("click", function() {
     if (horizontalWinCheck() || verticalWinCheck() || digonalWinCheck()) {
         $("h1").text(currentName + " You have won!");
         $("h3").fadeout("fast");
+        $("h2").fadeout("fast");
+    }
+    currentPlayer = currentPlayer * -1;
 
+    if (currentPlayer === 1) {
+        currentName = player1;
+        $("h3").text(currentName+" it is your turn.");
+    } else {
+        currentName = player2;
+        $("h3").text(currentName+" it is your turn.");
+        currentColor = player2Color;
     }
 })
