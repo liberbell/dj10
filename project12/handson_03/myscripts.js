@@ -52,7 +52,7 @@ function horizontalWinCheck() {
 function verticalWinCheck() {
     for (var col = 0; col < 7; col++){ 
         for (var row = 0; row < 3; row++){
-            if (colorMatchCheck(returnColor(row, col), returnColor(row + 1, col), returnColor(row + 2, col), returnColor(row+3,col))) {
+            if (colorMatchCheck(returnColor(row, col), returnColor(row + 1, col), returnColor(row + 2, col), returnColor(row + 3,col))) {
                 console.log("vertical");
                 reportWin(row, col);
                 return true;
@@ -70,7 +70,7 @@ function diagonalWinCheck() {
                 console.log("vertical");
                 reportWin(row, col);
                 return true;
-            } else if (colorMatchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2))) {
+            } else if (colorMatchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2), returnColor(row - 3,col + 3))) {
                 console.log("diag");
                 reportWin(row, col);
                 return true;
@@ -87,7 +87,7 @@ var currentColor = player1Color;
 
 $("h3").text(player1+" it is your turn, pick a column to drop in!");
 
-$(".border button").on("click", function() {
+$(".board button").on("click", function() {
     
     var col = $(this).closest("td").index();
     var bottomAvail = checkBotton(col);
