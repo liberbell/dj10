@@ -66,7 +66,7 @@ function verticalWinCheck() {
 function diagonalWinCheck() {
     for (var col = 0; col < 5; col++){ 
         for (var row = 0; row < 7; row++){
-            if (colorMatchCheck(returnColor(row, col), returnColor(row + 1, col + 1), returnColor(row + 2, col + 2))) {
+            if (colorMatchCheck(returnColor(row, col), returnColor(row + 1, col + 1), returnColor(row + 2, col + 2), returnColor(row + 3,col + 3))) {
                 console.log("vertical");
                 reportWin(row, col);
                 return true;
