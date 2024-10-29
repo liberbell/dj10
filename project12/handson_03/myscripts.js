@@ -86,3 +86,8 @@ var currentName = player1;
 var currentColor = player1Color;
 
 $("h3").text(player1+" it is your turn, pick a column to drop in!")
+
+$(".border button").on("click", function() {
+    
+    var col = $(this).closest("td").index();
+})
