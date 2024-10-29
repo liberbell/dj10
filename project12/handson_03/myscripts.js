@@ -90,4 +90,10 @@ $("h3").text(player1+" it is your turn, pick a column to drop in!")
 $(".border button").on("click", function() {
     
     var col = $(this).closest("td").index();
+    var bottomAvail = checkBottom(col);
+    changeColor(bottomAvail, col, currentColor);
+
+    if (horizontalWinCheck() || verticalWinCheck() || digonalWinCheck()) {
+        
+    }
 })
