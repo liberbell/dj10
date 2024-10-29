@@ -103,6 +103,7 @@ $(".border button").on("click", function() {
     if (currentPlayer === 1) {
         currentName = player1;
         $("h3").text(currentName+" it is your turn.");
+        currentColor = player1Color;
     } else {
         currentName = player2;
         $("h3").text(currentName+" it is your turn.");
