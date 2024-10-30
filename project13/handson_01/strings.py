@@ -11,3 +11,7 @@ print(x)
 
 x = mystrings.capitalize()
 print(x)
+
+mystrings = "hello world"
+x = mystrings.split()
+print(x)
