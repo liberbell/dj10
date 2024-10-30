@@ -18,3 +18,7 @@ d3 = {"k1": [{"nest_key": ["this is deep", ["hello"]]}]}
 mylist = [1,1,1,2,2,2,2,3,3,3]
 converted = set(mylist)
 print(converted)
+
+age = 4
+name = "sammy"
+print("Hello my dog`s name is {name} and he is {age} years old.".format())
