@@ -21,4 +21,4 @@ print(converted)
 
 age = 4
 name = "sammy"
-print("Hello my dog`s name is {name} and he is {age} years old.".format())
+print("Hello my dog`s name is {} and he is {} years old.".format(name, age))
