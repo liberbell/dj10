@@ -104,9 +104,7 @@ $(".board button").on("click", function() {
     changeColor(bottomAvail, col, currentColor);
 
     if (horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()) {
-        $("h1").text(currentName + " You have won!");
-        $("h3").fadeout("fast");
-        $("h2").fadeout("fast");
+        gameEnd(currentName)
     }
     currentPlayer = currentPlayer * -1;
 
