@@ -8,5 +8,9 @@ if 1 == 1:
 
 
 seq = [1,2,3,4,5,6,7,8,9]
-for item in seq:
+# for item in seq:
+    # print(item)
+
+d = {"james":1, "Q":2, "M": 3}
+for item in d:
     print(item)
