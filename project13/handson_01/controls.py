@@ -17,6 +17,11 @@ d = {"james":1, "Q":2, "M": 3}
 #     print(d[k])
 
 mypairs = [(1, 2), (3, 4), (5, 6)]
-for (tup1, tup2) in mypairs:
-    print(tup1)
-    print(tup2)
+# for (tup1, tup2) in mypairs:
+#     print(tup1)
+#     print(tup2)
+
+i = 1
+while i < 5:
+    print("i is {}".format(i))
+    i = i + 1
