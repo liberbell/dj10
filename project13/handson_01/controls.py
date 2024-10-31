@@ -12,6 +12,10 @@ seq = [1,2,3,4,5,6,7,8,9]
     # print(item)
 
 d = {"james":1, "Q":2, "M": 3}
-for k in d:
-    print(k)
-    print(d[k])
+# for k in d:
+#     print(k)
+#     print(d[k])
+
+mypairs = [(1, 2), (3, 4), (5, 6)]
+for item in mypairs:
+    print(item)
