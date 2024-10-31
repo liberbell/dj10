@@ -12,5 +12,6 @@ seq = [1,2,3,4,5,6,7,8,9]
     # print(item)
 
 d = {"james":1, "Q":2, "M": 3}
-for item in d:
-    print(item)
+for k in d:
+    print(k)
+    print(d[k])
