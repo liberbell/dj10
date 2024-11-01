@@ -35,3 +35,6 @@ for num in x:
     out.append(num ** 2)
 
 print(out)
+
+out2 = [num ** 2 for num in x]
+print(out2)
