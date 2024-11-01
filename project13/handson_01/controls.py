@@ -26,5 +26,12 @@ i = 1
 #     print("i is {}".format(i))
 #     i = i + 1
 
-for item in range(10):
-    print(item)
+# for item in range(10):
+#     print(item)
+
+x = [1, 2, 3, 4]
+out = []
+for num in x:
+    out.append(num ** 2)
+
+print(out)
