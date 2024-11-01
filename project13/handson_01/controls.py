@@ -22,6 +22,9 @@ mypairs = [(1, 2), (3, 4), (5, 6)]
 #     print(tup2)
 
 i = 1
-while i < 5:
-    print("i is {}".format(i))
-    i = i + 1
+# while i < 5:
+#     print("i is {}".format(i))
+#     i = i + 1
+
+for item in range(10):
+    print(item)
