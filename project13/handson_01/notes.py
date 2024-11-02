@@ -31,4 +31,4 @@ def even_bool(num):
     return num%2 == 0
 
 evens = filter(even_bool, my_list)
-print(evens)
+print(list(evens))
