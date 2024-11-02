@@ -32,3 +32,6 @@ def even_bool(num):
 
 evens = filter(even_bool, my_list)
 print(list(evens))
+
+evens = filter(lambda num: num%2 == 0, my_list)
+print(list(evens))
