@@ -35,3 +35,9 @@ print(list(evens))
 
 evens = filter(lambda num: num%2 == 0, my_list)
 print(list(evens))
+
+st = "hello"
+st.lower()
+st.upper()
+st.split()
+print(st)
