@@ -42,6 +42,6 @@ st.upper()
 st.split()
 print(st)
 
-tweet = "Bond, James Bond."
-result = st.split("#")
+tweet = "Bond,#James Bond."
+result = tweet.split("#")
 print(result)
