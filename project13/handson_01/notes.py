@@ -10,4 +10,5 @@ def hello():
     # print("Hello.")
     return "hello"
 
-hello()
+result = hello()
+print(result)
