@@ -19,3 +19,8 @@ def stringBits(mystring):
 print(stringBits("HeLLo"))
 print(stringBits("Hi"))
 print(stringBits("Heeololeo"))
+
+
+def ent_other(a, b):
+    a = a.lower()
+    b = b.lower()
