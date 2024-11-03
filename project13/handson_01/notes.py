@@ -46,4 +46,4 @@ tweet = "Bond,#James Bond."
 result = tweet.split("#")[1]
 print(result)
 
-print("x", [1, 2, 3])
+print("x" in [1, 2, 3, "x"])
