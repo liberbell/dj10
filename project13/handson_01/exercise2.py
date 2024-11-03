@@ -31,3 +31,8 @@ def ent_other(a, b):
 print(ent_other("Hiabc", "abc"))
 print(ent_other("Abc", "HiaBc"))
 print(ent_other("abc", "abXabc"))
+
+def doubleChar(mystring):
+    result = ""
+    for char in mystring:
+        result += char * 2
