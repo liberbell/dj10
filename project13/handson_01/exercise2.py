@@ -5,3 +5,12 @@ def arrayCheck(nums):
     return False
 
 print(arrayCheck([1, 1, 2, 3, 1]))
+print(arrayCheck([1, 1, 2, 4, 1]))
+print(arrayCheck([1, 1, 2, 1, 2, 3]))
+
+def stringBits(mystring):
+
+    result = ""
+    for i in range(len(mystring)):
+        if i % 2 ==0:
+            result = result + mystring[i]
