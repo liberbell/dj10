@@ -14,3 +14,8 @@ def stringBits(mystring):
     for i in range(len(mystring)):
         if i % 2 ==0:
             result = result + mystring[i]
+    return result
+
+print(stringBits("HeLLo"))
+print(stringBits("Hi"))
+print(stringBits("Heeololeo"))
