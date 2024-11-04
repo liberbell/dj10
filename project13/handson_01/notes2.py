@@ -32,5 +32,6 @@ def func():
 
     print("local x is change to ", x)
 
-func(x)
-print(x)
+print("before func call, x is ", x)
+func()
+print("after func call, x is ", x)
