@@ -1,3 +1,5 @@
+import random
+
 def get_guess():
     return list(input("What is your guess? "))
 
