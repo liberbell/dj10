@@ -13,11 +13,17 @@ def my_func():
 name = "This is a global name"
 
 def greet():
-    name = "summy"
+    # name = "summy"
 
     def hello():
         print("Hello " + name)
 
     hello()
 
-greet()
+# greet()
+
+x = 50
+def func(x):
+    print("x is " + x)
+    
+    x = 1000
