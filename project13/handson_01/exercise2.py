@@ -45,7 +45,7 @@ def no_teen_sum(a, b, c):
     
 
 def fix_teen(n):
-    """
-    docstring
-    """
-    pass
+    if n [13, 14, 17, 18, 19]:
+        return 0
+    return n
+    
