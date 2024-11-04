@@ -1,4 +1,4 @@
-x = 25
+# x = 25
 
 def my_func():
     x = 50
@@ -23,7 +23,9 @@ def greet():
 # greet()
 
 x = 50
-def func(x):
+def func():
+    global x
+
     print("x is ", x)
     
     x = 1000
@@ -31,3 +33,4 @@ def func(x):
     print("local x is change to ", x)
 
 func(x)
+print(x)
