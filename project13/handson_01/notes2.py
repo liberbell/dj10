@@ -26,11 +26,12 @@ x = 50
 def func():
     global x
 
-    print("x is ", x)
+    # print("x is ", x)
     
     x = 1000
 
-    print("local x is change to ", x)
+    # print("local x is change to ", x)
+    return x
 
 print("before func call, x is ", x)
 func()
