@@ -1,5 +1,11 @@
 def get_guess():
-    return input("What is your guess?")
+    return list(input("What is your guess? "))
 
-x = get_guess
+def generate_guess():
+    digits = [str(num) for num in range(10)]
+
+    random.shuffle(digits)
+    return digits[:3]
+
+x = get_guess()
 print(x)
