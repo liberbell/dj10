@@ -52,3 +52,11 @@ def fix_teen(n):
 print(no_teen_sum(1, 2, 3))
 print(no_teen_sum(2, 13, 1))
 print(no_teen_sum(2, 1, 14))
+
+def count_evens(nums):
+    count = 0
+
+    for element in nums:
+        if element % 2 == 0:
+            count += 1
+    return count
