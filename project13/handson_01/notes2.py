@@ -14,3 +14,8 @@ name = "This is a global name"
 
 def greet():
     name = "summy"
+
+    def hello():
+        print("Hello " + name)
+
+greet()
