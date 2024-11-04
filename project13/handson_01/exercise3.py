@@ -14,6 +14,9 @@ def generate_clues(code, user_guess):
     clues = []
     for ind, num in enumerate(user_guess):
         if num == code[ind]:
+            clues.append("match")
+        elif num in code:
+            clues.append("close")
 
 x = get_guess()
 print(x)
