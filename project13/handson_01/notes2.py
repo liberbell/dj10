@@ -24,10 +24,10 @@ def greet():
 
 x = 50
 def func(x):
-    print("x is " + x)
+    print("x is ", x)
     
     x = 1000
 
-    print("local x is change to " + x)
+    print("local x is change to ", x)
 
-func()
+func(x)
