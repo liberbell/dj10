@@ -1,7 +1,7 @@
 def get_guess():
     return list(input("What is your guess? "))
 
-def generate_guess():
+def generate_code():
     digits = [str(num) for num in range(10)]
 
     random.shuffle(digits)
@@ -22,5 +22,7 @@ def generate_clues(code, user_guess):
     else:
         return clues
 
-x = get_guess()
-print(x)
+
+print("Welcome Code Broker")
+secret_code = generate_clues()
+clue_report =[]
