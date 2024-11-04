@@ -26,7 +26,7 @@ def generate_clues(code, user_guess):
 
 
 print("Welcome Code Broker")
-secret_code = generate_clues()
+secret_code = generate_code()
 clue_report =[]
 while clue_report != "Code Cracked":
     guess = get_guess()
