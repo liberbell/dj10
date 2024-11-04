@@ -6,3 +6,5 @@ def my_func():
 
 print(x)
 print(my_func())
+my_func()
+print()
