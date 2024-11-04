@@ -28,3 +28,8 @@ secret_code = generate_clues()
 clue_report =[]
 while clue_report != "Code Cracked":
     guess = get_guess()
+
+    clue_report = generate_clues(guess,secret_code)
+    print("Here is the result of your guess:")
+    for clue in clue_report:
+        print(clue)
