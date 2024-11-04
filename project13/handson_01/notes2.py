@@ -18,4 +18,6 @@ def greet():
     def hello():
         print("Hello " + name)
 
+    hello()
+
 greet()
