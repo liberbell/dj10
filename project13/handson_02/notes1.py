@@ -16,6 +16,6 @@ class Dog():
         self.name = name
 
 mydog = Dog(breed="Lab", name="Sammy")
-otherdog = Dog(breed="Haskie")
-print(mydog.breed)
+# otherdog = Dog(breed="Haskie")
+print(mydog.breed, mydog.name)
 # print(otherdog.breed)
