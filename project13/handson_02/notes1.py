@@ -14,5 +14,5 @@ class Dog():
     def __init__(self, breed):
         self.breed = breed
 
-mydog = Dog()
+mydog = Dog(breed="Lab")
 print(type(mydog))
