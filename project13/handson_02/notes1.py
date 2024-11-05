@@ -11,8 +11,9 @@ x = Sample()
 
 class Dog():
     
-    def __init__(self, breed):
+    def __init__(self, breed, name):
         self.breed = breed
+        self.name = name
 
 mydog = Dog(breed="Lab")
 otherdog = Dog(breed="Haskie")
