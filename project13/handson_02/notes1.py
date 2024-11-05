@@ -7,7 +7,7 @@ class Sample():
     pass
 
 x = Sample()
-print(type(x))
+# print(type(x))
 
 class Dog():
     
@@ -17,3 +17,4 @@ class Dog():
 mydog = Dog(breed="Lab")
 otherdog = Dog(breed="Haskie")
 print(mydog.breed)
+print(otherdog.breed)
