@@ -10,7 +10,7 @@ x = Sample()
 # print(type(x))
 
 class Dog():
-    
+    spiceis = "mammal"
     def __init__(self, breed, name):
         self.breed = breed
         self.name = name
@@ -18,4 +18,11 @@ class Dog():
 mydog = Dog(breed="Lab", name="Sammy")
 # otherdog = Dog(breed="Haskie")
 print(mydog.breed, mydog.name)
+print(mydog.spiceis)
 # print(otherdog.breed)
+
+class Circle():
+    pi = 3.14
+
+    def __init__(self, radius = 1):
+        self.radius = 
