@@ -7,4 +7,12 @@ class Sample():
     pass
 
 x = Sample()
-print(x)
+print(type(x))
+
+class Dog()
+    
+    def __init__(self, breed):
+        self.breed = breed
+
+mydog = Dog()
+print(type(mydog))
