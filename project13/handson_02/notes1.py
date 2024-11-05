@@ -15,4 +15,5 @@ class Dog():
         self.breed = breed
 
 mydog = Dog(breed="Lab")
-print(type(mydog))
+otherdog = Dog(breed="Haskie")
+print(mydog.breed)
