@@ -9,6 +9,12 @@ class Animal():
     def eat(self):
         print("eating")
 
+class Dog(Animal):
+
+    def __init__(self):
+        pass
+
+
 mya = Animal()
 mya.whoAmI()
 mya.eat()
