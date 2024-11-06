@@ -6,5 +6,9 @@ class Animal():
     def whoAmI(self):
         print("ANIMAL")
 
-    def ea(self):
+    def eat(self):
         print("eating")
+
+mya = Animal()
+mya.whoAmI()
+mya.eat()
