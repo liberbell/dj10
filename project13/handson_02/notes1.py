@@ -31,4 +31,4 @@ class Circle():
         return self.radius * self.radius * Circle.pi
 
 myc = Circle(3)
-print(myc.area)
+print(myc.area())
