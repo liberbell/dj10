@@ -19,3 +19,7 @@ class Dog(Animal):
 mya = Animal()
 mya.whoAmI()
 mya.eat()
+
+mydog = Dog()
+mydog.whoAmI()
+mydog.eat()
