@@ -32,8 +32,8 @@ class Circle():
     
     def set_radius(self, new_r):
         self.radius = new_r
-        
+
 
 myc = Circle(3)
-myc.radius = 100
+myc.radius = 999
 print(myc.area())
