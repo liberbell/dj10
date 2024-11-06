@@ -15,11 +15,15 @@ class Dog(Animal):
         Animal.__init__(self)
         print("Dog CREATED")
 
+    def bark(self):
+        print("WOOF")
 
-mya = Animal()
-mya.whoAmI()
-mya.eat()
+
+# mya = Animal()
+# mya.whoAmI()
+# mya.eat()
 
 mydog = Dog()
 mydog.whoAmI()
 mydog.eat()
+mydog.bark()
