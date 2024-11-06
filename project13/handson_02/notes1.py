@@ -17,8 +17,8 @@ class Dog():
 
 mydog = Dog(breed="Lab", name="Sammy")
 # otherdog = Dog(breed="Haskie")
-print(mydog.breed, mydog.name)
-print(mydog.spiceis)
+# print(mydog.breed, mydog.name)
+# print(mydog.spiceis)
 # print(otherdog.breed)
 
 class Circle():
@@ -26,6 +26,9 @@ class Circle():
 
     def __init__(self, radius = 1):
         self.radius = radius
+
+    def area(self):
+        return self.radius * self.radius * Circle.pi
 
 myc = Circle()
 print(myc.radius)
