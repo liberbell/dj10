@@ -12,7 +12,8 @@ class Animal():
 class Dog(Animal):
 
     def __init__(self):
-        pass
+        Animal.__init__(self)
+        print("Dog CREATED")
 
 
 mya = Animal()
