@@ -26,7 +26,15 @@ class Dog(Animal):
 # mya.whoAmI()
 # mya.eat()
 
-mydog = Dog()
-mydog.whoAmI()
-mydog.eat()
-mydog.bark()
+# mydog = Dog()
+# mydog.whoAmI()
+# mydog.eat()
+# mydog.bark()
+
+def book():
+
+    def __init__(self, title, author, pages):
+        self.title = title
+
+mylist = [1, 2, 3]
+print(mylist)
