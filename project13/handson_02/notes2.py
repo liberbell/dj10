@@ -39,7 +39,7 @@ class Book():
         self.pages = pages
 
     def __str__(self):
-        return "Hello"
+        return "Title: {}, author: {}, pages: {}".format(self.title, self.author, self.pages)
 
 b = Book("python", "james", 432)
 print(b)
