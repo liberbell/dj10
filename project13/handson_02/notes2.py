@@ -38,5 +38,8 @@ def book():
         self.author = author
         self.pages = pages
 
+b = book("python", "james", 432)
+print(b.title, b.author, b.pages)
+
 mylist = [1, 2, 3]
 print(mylist)
