@@ -39,10 +39,15 @@ class Book():
         self.pages = pages
 
     def __str__(self):
-        return "Title: {}, author: {}, pages: {}".format(self.title, self.author, self.pages6)
+        return "Title: {}, author: {}, pages: {}".format(self.title, self.author, self.pages)
+    
+    def __len__(self):
+        return self.pages
+
 
 b = Book("python", "james", 432)
 print(b)
+print(len(b))
 
 # mylist = [1, 2, 3]
 # print(mylist)
