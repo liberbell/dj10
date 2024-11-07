@@ -8,3 +8,8 @@ class Deck:
 
 class Hand:
     pass
+
+class Player:
+    pass
+
+print("Welcome to War, let`s begin...")
