@@ -31,15 +31,15 @@ class Dog(Animal):
 # mydog.eat()
 # mydog.bark()
 
-def book():
+def Book():
 
     def __init__(self, title, author, pages):
         self.title = title
         self.author = author
         self.pages = pages
 
-b = book("python", "james", 432)
-print(b.title, b.author, b.pages)
+b = Book("python", "james", 432)
+print(b)
 
 mylist = [1, 2, 3]
 print(mylist)
