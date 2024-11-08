@@ -12,4 +12,4 @@ class Hand:
 class Player:
     pass
 
-print("Welcome to War, let`s begin...")
+print("Welcome to War, Shall we play a game?")
