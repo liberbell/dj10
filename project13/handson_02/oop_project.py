@@ -18,7 +18,18 @@ class Deck:
         return (self.allcards[:26], self.allcards[26:])
 
 class Hand:
-    pass
+    
+    def __init__(self, cards):
+        self.cards = cards
+
+    def __str__(self):
+        return "Contains {} cards".format(len(self.cards))
+    
+    def add(self, add_cards):
+        self.cards.extend(add_cards)
+
+    def remove_card(self):
+        return self.cards.pop()
 
 class Player:
     pass
