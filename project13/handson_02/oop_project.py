@@ -39,5 +39,6 @@ class Player:
 
     def play_card(self):
         drawn_card = self.hand.remove_card()
+        print("{} has placed: {}]".format(self.name, self.hand))
 
 print("Welcome to War, Shall we play a game?")
