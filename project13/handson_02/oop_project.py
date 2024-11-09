@@ -32,6 +32,12 @@ class Hand:
         return self.cards.pop()
 
 class Player:
-    pass
+    
+    def __init__(self, name, hand):
+        self.name = name
+        self.hand = hand
+
+    def play_card(self):
+        drawn_card = self.hand.remove_card()
 
 print("Welcome to War, Shall we play a game?")
