@@ -15,7 +15,7 @@ class Deck:
         shuffle(self.allcards)
 
     def split_in_half(self):
-        return (self.allcards)
+        return (self.allcards[:26], self.allcards[26:])
 
 class Hand:
     pass
