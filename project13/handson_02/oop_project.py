@@ -68,3 +68,4 @@ while user.split_has_cards() and comp.still_has_cards():
     total_rounds += 1
     print("Time for a new round.")
     print("here are the current standings.")
+    print(user.name + " has the count: " + str(len(user.hand.cards)))
