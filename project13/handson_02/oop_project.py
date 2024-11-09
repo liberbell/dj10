@@ -46,7 +46,7 @@ class Player:
     def remove_war_card(self):
         war_cards = []
         for x in range(3):
-            war_cards.append(self.hand.cards.pop())
+            war_cards.append(self.hand.remove_card())
         return war_cards
 
 print("Welcome to War, Shall we play a game?")
