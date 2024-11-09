@@ -48,5 +48,13 @@ class Player:
         for x in range(3):
             war_cards.append(self.hand.remove_card())
         return war_cards
+    
+    def still_has_cards(self):
+        return len(self.hand.cards) != 0
 
 print("Welcome to War, Shall we play a game?")
+
+d = Deck()
+d.shuffle()
+half1, half2 = d.spilit_in_half
+comp = Player("computer", Hand(half1))
