@@ -58,3 +58,5 @@ d = Deck()
 d.shuffle()
 half1, half2 = d.spilit_in_half
 comp = Player("computer", Hand(half1))
+name = input("What is your name?")
+user = Player(name, Hand(half2))
