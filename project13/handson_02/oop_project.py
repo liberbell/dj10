@@ -45,9 +45,12 @@ class Player:
     
     def remove_war_card(self):
         war_cards = []
-        for x in range(3):
-            war_cards.append(self.hand.remove_card())
-        return war_cards
+        if len(self.hand.cards) < 3:
+            return self.hand.cards
+        else:
+            for x in range(3):
+                war_cards.append(self.hand.remove_card())
+            return war_cards
     
     def still_has_cards(self):
         return len(self.hand.cards) != 0
