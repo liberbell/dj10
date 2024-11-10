@@ -79,3 +79,11 @@ while user.split_has_cards() and comp.still_has_cards():
 
     table_cards.append(c_card)
     table_cards.append(p_card)
+
+    if c_card[1] == p_card[1]:
+        war_count += 1
+
+        print("War!")
+
+        table_cards.extend(user.remove_war_card())
+        table_cards.extend(comp.remove_war_card())
