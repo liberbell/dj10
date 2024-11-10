@@ -98,3 +98,6 @@ while user.split_has_cards() and comp.still_has_cards():
             user.hand.add(table_cards)
         else:
             comp.hand.add(table_cards)
+
+print("GAME OVER! number of rounds: "+ str(total_rounds))
+print("A WAR happend " + str(war_count) + " times")
