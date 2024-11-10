@@ -72,3 +72,10 @@ while user.split_has_cards() and comp.still_has_cards():
     print(user.name + " has the count: " + str(len(user.hand.cards)))
     print("Play a card!")
     print("\n")
+
+    table_cards = []
+    c_card = comp.play_card()
+    p_card = user.play_card()
+
+    table_cards.append(c_card)
+    table_cards.append(p_card)
