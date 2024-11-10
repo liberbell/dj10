@@ -92,3 +92,9 @@ while user.split_has_cards() and comp.still_has_cards():
             user.hand.add(table_cards)
         else:
             comp.hand.add(table_cards)
+
+    else:
+        if RANKS.index(c_card[1]) < RANKS.index(p_card[1]):
+            user.hand.add(table_cards)
+        else:
+            comp.hand.add(table_cards)
