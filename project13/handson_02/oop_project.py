@@ -69,3 +69,6 @@ while user.split_has_cards() and comp.still_has_cards():
     print("Time for a new round.")
     print("here are the current standings.")
     print(user.name + " has the count: " + str(len(user.hand.cards)))
+    print(user.name + " has the count: " + str(len(user.hand.cards)))
+    print("Play a card!")
+    print("\n")
