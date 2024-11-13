@@ -7,4 +7,5 @@ def index(request):
 
 
 def help(request):
-    return HttpResponse("<em>My Second App</em>")
+    help_dict = {"help_insert": "HELP PAGE"}
+    return render(request, "apptwo/help.html", context=help_dict)
