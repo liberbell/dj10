@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,7 @@
 </head>
 <body>
     <h1>Hello This is a picture of Django himself!</h1>
+    <img src="{% static "images/aircraft-2795557_640.jpg" %}" alt="Air craft"/>
     {{ insert_me }}
 </body>
 </html>
