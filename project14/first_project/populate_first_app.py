@@ -27,3 +27,8 @@ def populate(n=5):
         webpg = Webpage.objects.get_or_create(topic=top, url=fake_url, name=fake_name)[0]
 
         acc_rec = AccessRecord.objects.get_or_create(name=webpg, date=fake_date)[0]
+
+if __name__ == "__main__":
+    print("populating start...")
+    populate(20)
+    print("populating complete.")
