@@ -18,3 +18,6 @@ class Webpage(models.Model):
 class AccessRecord(models.Model):
     name = models.ForeignKey(Webpage, on_delete=models.CASCADE)
     date = models.DateField()
+
+    def ___init__(self):
+        return str(self.date)
