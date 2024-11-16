@@ -23,3 +23,7 @@ def populate(n=5):
         fake_url = fakegen.url()
         fake_date = fakegen.date()
         fake_name  = fakegen.company()
+
+        webpg = Webpage.objects.get_or_create(topic=top, url=fake_url, name=fake_name)[0]
+
+        acc_rec = AccessRecord.objects.get_or_create()
