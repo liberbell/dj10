@@ -21,4 +21,5 @@ def populate(n=5):
         top = add_topic()
 
         fake_url = fakegen.url()
-        fale_date = fakegen.date()
+        fake_date = fakegen.date()
+        fake_name  = fakegen.company()
