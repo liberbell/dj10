@@ -8,7 +8,7 @@ class Topic(models.Model):
         return self.top_name
     
 class Webpage(models.Model):
-    topic = models.ForeignKey(Topic)
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     name = models.CharField(max_length=254, unique=True)
     url = models.URLField(unique=True)
 
