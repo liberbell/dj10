@@ -8,4 +8,7 @@ os.environ.setdefault("DJANGO_SETTING_MODULE", "first_project.settings")
 django.setup()
 
 fakegen = Faker()
-topics = ["Search", "Social", "Marketplace"]
+topics = ["Search", "Social", "Marketplace", "News", "Games"]
+
+def add_topic():
+    t = Topic.objects.get_or_create(top_name=random.choice(topics))[0]
