@@ -2,12 +2,14 @@ import os
 import django
 import random
 
-from faker import Faker
+
 
 # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "first_project.settings")
 os.environ["DJANGO_SETTINGS_MODULE"] = "first_project.settings"
-from first_app.models import AccessRecord, Webpage, Topic
+
+from faker import Faker
 django.setup()
+from first_app.models import AccessRecord, Webpage, Topic
 
 fakegen = Faker()
 topics = ["Search", "Social", "Marketplace", "News", "Games"]
