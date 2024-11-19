@@ -8,3 +8,5 @@ def index(request):
 def users(request):
     
     user_list = Users.objects.order_by("first_name")
+    user_dict = {"users": user_list}
+    return render(request, "appthree/users.html", context=user_dict)
