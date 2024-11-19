@@ -1,5 +1,7 @@
 from django.urls import path
+from appTwo import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('index/', views.index, name="index"),
+    path("users/", views.users, name="users"),
 ]
