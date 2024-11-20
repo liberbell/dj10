@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from appTwo.models import Users
+from appTwo.models import User
 
 # Create your views here.
 def index(request):
@@ -7,6 +7,6 @@ def index(request):
 
 def users(request):
     
-    user_list = Users.objects.order_by("first_name")
+    user_list = User.objects.order_by("first_name")
     user_dict = {"users": user_list}
     return render(request, "appthree/users.html", context=user_dict)
