@@ -1,5 +1,6 @@
 import os
-os.environ.setdefault("DJANGO_SETTIMGS_MODULE", "ProThree.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ProThree.settings")
+# os.environ           ["DJANGO_SETTINGS_MODULE"] = "first_project.settings"
 
 import django
 django.setup()
