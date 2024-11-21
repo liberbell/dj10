@@ -10,6 +10,11 @@
         <ol>
             {% for person in users %}
             <li>User Info</li>
+            <ul>
+                <li>First name: {{ person.first_name }}</li>
+                <li>Last name</li>
+                <li>Email</li>
+            </ul>
         </ol>
     {% endif %}
 </body>
