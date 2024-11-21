@@ -5,6 +5,12 @@
     <title>Users</title>
 </head>
 <body>
-    
+    <h1>Here are your Users for AppThree:</h1>
+    {% if users %}
+        <ol>
+            {% for person in users %}
+            <li>User Info</li>
+        </ol>
+    {% endif %}
 </body>
 </html>
