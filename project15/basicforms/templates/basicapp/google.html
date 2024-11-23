@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google 検索</title>
+  <style>
+    /* ページ全体の基本スタイル */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* 中央配置のコンテナ */
+    .search-container {
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    /* Googleのロゴのスタイル */
+    .logo {
+      margin-bottom: 30px;
+    }
+
+    /* 検索ボックスのスタイル */
+    .search-box {
+      width: 100%;
+      max-width: 500px;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #dcdcdc;
+      border-radius: 24px;
+      box-sizing: border-box;
+    }
+
+    /* 検索ボタンのスタイル */
+    .search-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #f8c764;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-button:hover {
+      background-color: #f7b200;
+    }
+
+    .search-button:focus {
+      outline: none;
+    }
+
+    /* 追加のボタンのスタイル（例: "Google 検索" と "I'm Feeling Lucky"） */
+    .additional-buttons {
+      margin-top: 20px;
+    }
+
+    .additional-buttons button {
+      padding: 8px 20px;
+      font-size: 14px;
+      color: #5f6368;
+      background-color: transparent;
+      border: 1px solid #dcdcdc;
+      border-radius: 24px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .additional-buttons button:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-container">
+    <!-- Googleロゴ（画像のURLはGoogleのものではなく、サンプルのURLを使用） -->
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" width="250">
+    </div>
+
+    <!-- 検索ボックス -->
+    <input type="text" class="search-box" placeholder="検索">
+
+    <!-- 検索ボタン -->
+    <div>
+      <button class="search-button">Google 検索</button>
+    </div>
+
+    <!-- 追加のボタン -->
+    <div class="additional-buttons">
+      <button>I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+</body>
+</html>

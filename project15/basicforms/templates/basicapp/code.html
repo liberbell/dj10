@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ターミナル風デザイン</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .terminal {
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #000000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+      color: #00ff00;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .terminal-line {
+      display: flex;
+    }
+
+    .terminal-prompt {
+      color: #ff5c57;  /* プロンプトの色 */
+      margin-right: 10px;
+    }
+
+    .terminal-text {
+      flex-grow: 1;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 18px;
+      background-color: #00ff00;
+      animation: blink 0.8s step-end infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes blink {
+      50% {
+        background-color: transparent;
+      }
+    }
+
+    /* 自動で行を追加するためのスタイル */
+    .terminal-text pre {
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="terminal">
+    <div class="terminal-line">
+        <span class="terminal-text"><pre>Username: ggl_pret</pre></span>
+    </div>
+    <div class="terminal-line">
+        <span class="terminal-text"><pre>Password: *********</pre></span>
+    </div>
+    <div class="terminal-line">
+      <span class="terminal-text"><pre>Login Successful</pre></span>
+    </div>
+    <div class="terminal-line">
+      <span class="terminal-text"><pre>Welcome to the Google Admin</pre></span>
+    </div>
+    <div class="terminal-line">
+      <span class="terminal-prompt">ggl_pret@localhost:~$</span>
+      <span class="terminal-text"><pre>gmail_adm_menu</pre></span>
+    </div>
+    <div class="terminal-line">
+        <span class="terminal-prompt">ggl_pret@localhost:~$</span>
+        <span class="cursor"></span>
+      </div>
+  </div>
+
+</body>
+</html>
