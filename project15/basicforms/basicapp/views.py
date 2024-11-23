@@ -7,4 +7,4 @@ def index(request):
 
 def form_name_view(request):
     form = forms.FormName()
-    return render(request, "basicapp/form_page.html")
+    return render(request, "basicapp/form_page.html", context={"form": form})
