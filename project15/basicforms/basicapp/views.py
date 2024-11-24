@@ -10,4 +10,8 @@ def form_name_view(request):
 
     if request.method == "POST":
         form = forms.FormName(request.POST)
+        if form.is_valid():
+            print("Validation successful")
+            print("NAME:"+form.cleaned_data["name"])
+            
     return render(request, "basicapp/form_page.html", context={"form": form})
