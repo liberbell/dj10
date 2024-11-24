@@ -16,4 +16,4 @@ def form_name_view(request):
             print("Email:"+form.cleaned_data["email"])
             print("Text:"+form.cleaned_data["text"])
 
-    return render(request, "basicapp/index.html", {"form": form})
+    return render(request, "basicapp/form_page.html", {"form": form})
