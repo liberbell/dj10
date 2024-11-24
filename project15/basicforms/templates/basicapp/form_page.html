@@ -7,8 +7,9 @@
 <body>
     <h1>Fill out the form.</h1>
     <div class="container">
-        <form action="index.html" method="post">
-            {{ form }}
+        <form action="index.html" method="POST">
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-primary" value="Submit">
         </form>
     </div>
 </body>
