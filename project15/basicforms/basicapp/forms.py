@@ -9,4 +9,4 @@ class FormName(forms.Form):
     def clean_botcacher(self):
         botcacher = self.cleaned_data["botcacher"]
         if len(botcacher) > 0:
-            
+            raise forms.ValidationError("GOTCHA BOT!")
