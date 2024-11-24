@@ -7,4 +7,7 @@ def index(request):
 
 def form_name_view(request):
     form = forms.FormName()
+
+    if request.method == "POST":
+        form = forms.FormName(request.POST)
     return render(request, "basicapp/form_page.html", context={"form": form})
