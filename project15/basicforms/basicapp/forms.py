@@ -2,7 +2,7 @@ from django import forms
 from django.core import validators
 
 def check_for_z(value):
-    if value[0].lower() == "z":
+    if value[0].lower() != "z":
         raise forms.ValidationError("Needs to start with z")
 
 class FormName(forms.Form):
