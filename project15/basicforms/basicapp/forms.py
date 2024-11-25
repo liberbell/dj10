@@ -1,6 +1,9 @@
 from django import forms
 from django.core import validators
 
+def check_for_z(value):
+    if value[0].lower() == "z":
+
 class FormName(forms.Form):
     name = forms.CharField()
     email = forms.EmailField()
