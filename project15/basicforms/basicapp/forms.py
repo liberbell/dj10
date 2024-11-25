@@ -8,6 +8,7 @@ def check_for_z(value):
 class FormName(forms.Form):
     name = forms.CharField(validators=[check_for_z])
     email = forms.EmailField()
+    verify_email = forms.EmailField(label="Enter your email again")
     text = forms.CharField(widget=forms.Textarea)
     botcacher = forms.CharField(required=False,
                                 widget=forms.HiddenInput,
