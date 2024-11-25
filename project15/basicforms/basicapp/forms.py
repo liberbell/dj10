@@ -5,7 +5,9 @@ class FormName(forms.Form):
     name = forms.CharField()
     email = forms.EmailField()
     text = forms.CharField(widget=forms.Textarea)
-    botcacher = forms.CharField(required=False, widget=forms.HiddenInput)
+    botcacher = forms.CharField(required=False,
+                                widget=forms.HiddenInput,
+                                validators=[validators.MaxLengthValidator(0)])
 
     # def clean_botcacher(self):
     #     botcacher = self.cleaned_data["botcacher"]
