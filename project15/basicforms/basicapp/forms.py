@@ -6,7 +6,7 @@ def check_for_z(value):
         raise forms.ValidationError("Needs to start with z")
 
 class FormName(forms.Form):
-    name = forms.CharField()
+    name = forms.CharField(validators=[check_for_z])
     email = forms.EmailField()
     text = forms.CharField(widget=forms.Textarea)
     botcacher = forms.CharField(required=False,
