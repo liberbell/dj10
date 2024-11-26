@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from appTwo.models import User
 from django.http import HttpResponse
-from appTwo.forms import NewUser
+from appTwo.forms import NewUserForm
 
 # Create your views here.
 def index(request):
@@ -9,4 +9,6 @@ def index(request):
 
 def users(request):
     
-    
+    form = NewUserForm()
+    if request.method == "POST":
+        form = NewUserForm(request.POST)

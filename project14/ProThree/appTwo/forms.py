@@ -3,6 +3,6 @@ from appTwo.models import User
 
 class NewUserForm(forms.ModelForm):
     
-    class Meta:
+    class Meta():
         model = User
         fields = "__all__"
