@@ -18,3 +18,5 @@ def users(request):
             return index(request)
         else:
             print("Error Form invalid")
+
+    return render(request, "appthree/users.html", context={"form": form})
