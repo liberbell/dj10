@@ -15,3 +15,6 @@ def users(request):
 
         if form.is_valid():
             form.save(commit=True)
+            return index(request)
+        else:
+            print("Error Form invalid")
