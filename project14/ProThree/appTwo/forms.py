@@ -1,7 +1,7 @@
 from django import forms
 from appTwo.models import User
 
-class NewUser(forms.ModelForm):
+class NewUserForm(forms.ModelForm):
     
     class Meta:
         model = User
