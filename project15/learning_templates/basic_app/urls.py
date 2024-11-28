@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from basic_app import views
 
 urlpatterns = [
-    path("other", views.other, name="other"),
+    path("other/", views.other, name="other"),
+    path("relative/", views.relative, name="relative"),
 ]
