@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 class UserProfileInfoModel(models.Model):
     user = models.OneToOneField(User)
 
-    portfolio = models.URLField(max_length=200, blank=True)
-    picture = models.ImageField(upload_to="portfolio_pics")
+    portfolio_site = models.URLField(max_length=200, blank=True)
+    portfolio_pic = models.ImageField(upload_to="portfolio_pics", blank=Treu)
 
     def __str__(self):
         return self.name
