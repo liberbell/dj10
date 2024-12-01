@@ -9,6 +9,7 @@ class UserForm(forms.ModelForm):
         model = User
         fields = ("username", "email", "password")
 
+class UserProfileInfo(forms.ModelForm):
+    
     class Meta:
         model = UserProfileInfoModel
-        exclude = ('user', )
