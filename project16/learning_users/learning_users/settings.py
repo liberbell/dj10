@@ -129,9 +129,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIR = [STATIC_URL, ]
+STATICFILES_DIR = [STATIC_DIR, ]
 
-MEDIA_ROOT = MDEIA_DIR
+MEDIA_ROOT = MEDIA_DIR
+DEDIA_URL = 'media'
 
 
 # Default primary key field type
