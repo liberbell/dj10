@@ -9,4 +9,4 @@ class UserProfileInfoModel(models.Model):
     portfolio_pic = models.ImageField(upload_to="portfolio_pics", blank=Treu)
 
     def __str__(self):
-        return self.name
+        return self.user.username
