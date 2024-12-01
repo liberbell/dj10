@@ -13,3 +13,4 @@ class UserProfileInfo(forms.ModelForm):
     
     class Meta:
         model = UserProfileInfoModel
+        fields = ("portfolio_site", "portfolio_pic")
