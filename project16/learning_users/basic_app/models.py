@@ -6,7 +6,7 @@ class UserProfileInfoModel(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     portfolio_site = models.URLField(max_length=200, blank=True)
-    portfolio_pic = models.ImageField(upload_to="portfolio_pics", blank=Treu)
+    portfolio_pic = models.ImageField(upload_to="portfolio_pics", blank=True)
 
     def __str__(self):
         return self.user.username
