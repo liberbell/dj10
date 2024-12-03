@@ -16,4 +16,11 @@ def register(request):
             user = user_form.save()
             user.set_password(user.password)
             user.save()
+
+            profile = profile_form.save(commit=False)
+            profile.user = user
+
+            if "profile_pic" in request.FILES:
+                profile.profile_pic = request.FILES["profile_pic"]
+
     return render(request, "basic_app/register.html")
