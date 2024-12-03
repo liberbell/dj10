@@ -23,4 +23,11 @@ def register(request):
             if "profile_pic" in request.FILES:
                 profile.profile_pic = request.FILES["profile_pic"]
 
+            profile.save()
+
+            retisterd = True
+
+        else:
+            
+
     return render(request, "basic_app/register.html")
