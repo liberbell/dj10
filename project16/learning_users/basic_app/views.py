@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from basic_app.forms import UserForm, UserProfileInfo
+from basic_app.forms import UserForm, UserProfileInfoForm
 
 # Create your views here.
 def index(request):
@@ -9,5 +9,5 @@ def register(request):
     registerd = False
     if request.method == "POST":
         user_form = UserForm(data=request.POST)
-        profile_form = UserProfileInfo(data=request.POST)
+        profile_form = UserProfileInfoForm(data=request.POST)
     return render(request, "basic_app/register.html")
