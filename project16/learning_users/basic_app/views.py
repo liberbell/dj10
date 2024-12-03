@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-class index(request):
-    pass
+def index(request):
+    return render(request, "basic_app/index.html")
 
-class register(request):
-    pass
+def register(request):
+    return render(request, "basic_app/register.html")
