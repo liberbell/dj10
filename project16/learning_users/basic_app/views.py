@@ -28,6 +28,9 @@ def register(request):
             retisterd = True
 
         else:
-            
+            print(user_form.errors, profile_form.errors)
+    else:
+        user_form = UserForm()
+        profile_form = UserProfileInfoForm()
 
     return render(request, "basic_app/register.html")
