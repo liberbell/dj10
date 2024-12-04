@@ -6,7 +6,7 @@ def index(request):
     return render(request, "basic_app/index.html")
 
 def register(request):
-    registerd = False
+    registered = False
     if request.method == "POST":
         user_form = UserForm(data=request.POST)
         profile_form = UserProfileInfoForm(data=request.POST)
@@ -25,7 +25,7 @@ def register(request):
 
             profile.save()
 
-            retisterd = True
+            registered = True
 
         else:
             print(user_form.errors, profile_form.errors)
@@ -36,4 +36,4 @@ def register(request):
     return render(request, "basic_app/registration.html",
                   {'user_form':user_form,
                    'profile_form': profile_form,
-                   'registerd': registerd})
+                   'registered': registered})
