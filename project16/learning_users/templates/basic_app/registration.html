@@ -3,13 +3,13 @@
 {% block body_content %}
 <div class="bg-body-tertiary p-3 p-sm-5 mb-4">
     <div class="container">
-        {% if registerd %}
+        {% if registered %}
           <h1>Thank you for registering.</h1>
         {% else %}
           <h1>Register here</h1>
           <h3>Fill out the form:</h3>
 
-          <form action="post" enctype="multipart/form-data" method="post">
+          <form action="post" enctype="multipart/form-data" method="POST">
             {% csrf_token %}
             {{ user_form.as_p }}
             {{ profile_form.as_p }}
