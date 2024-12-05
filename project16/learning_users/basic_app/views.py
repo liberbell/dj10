@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from basic_app.forms import UserForm, UserProfileInfoForm
+from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
