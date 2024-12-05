@@ -49,3 +49,8 @@ def user_login(request):
         password = request.POST.get("password")
 
         user = authenticate(username=username, password=password)
+
+        if user:
+            if user.is_active:
+                login(request, user)
+                return HttpResponseRedirect(reverse("index"))
