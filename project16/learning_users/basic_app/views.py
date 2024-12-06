@@ -60,3 +60,4 @@ def user_login(request):
         else:
             print("Someone try to login and failed.")
             print("Username:{} and Password:{}".format(username, password))
+            return HttpResponse("Invalid login details supplied.")
