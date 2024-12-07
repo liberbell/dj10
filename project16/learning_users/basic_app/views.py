@@ -10,6 +10,10 @@ def index(request):
     return render(request, "basic_app/index.html")
 
 @login_required
+def special(request):
+    return HttpResponse("You are logged in, well done!")
+
+@login_required
 def user_logout(request):
 
     logout(request)
