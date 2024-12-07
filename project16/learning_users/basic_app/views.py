@@ -9,6 +9,7 @@ from django.contrib.auth import authenticate, login, logout
 def index(request):
     return render(request, "basic_app/index.html")
 
+@login_required
 def user_logout(request):
 
     logout(request)
