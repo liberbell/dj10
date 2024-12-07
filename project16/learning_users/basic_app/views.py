@@ -9,6 +9,11 @@ from django.contrib.auth import authenticate, login, logout
 def index(request):
     return render(request, "basic_app/index.html")
 
+def user_logout(request):
+
+    logout(request)
+    return HttpResponseRedirect(reverse('index'))
+
 def register(request):
     registered = False
     if request.method == "POST":
