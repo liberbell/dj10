@@ -20,3 +20,5 @@ class Post(models.Model):
     def __str__(self):
         return self.title
     
+class comments(models.Model):
+    post = models.ForeignKey("blog.Post", related_name="comments", on_delete=models.CASCADE)
