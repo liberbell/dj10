@@ -3,4 +3,8 @@ from blog.models import Post, Comments
 
 class PostForm(forms.ModelForm):
 
-    class
+    class Meta:
+        model = Post
+        fields = ("author", "title", "text")
+
+class CommentsForm(forms.ModelForm):
