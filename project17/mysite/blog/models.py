@@ -31,6 +31,10 @@ class comments(models.Model):
         self.approve_comment = True
         self.save()
 
+    def get_absolute_url(self):
+        return reverse("post_detail", kwargs={"pk": self.pk})
+    
+
     def __str__(self):
         return self.text
     
