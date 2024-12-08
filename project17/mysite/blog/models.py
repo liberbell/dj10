@@ -22,3 +22,6 @@ class Post(models.Model):
     
 class comments(models.Model):
     post = models.ForeignKey("blog.Post", related_name="comments", on_delete=models.CASCADE)
+    author = models.CharField(max_length=200)
+    text = models.TextField(max_length=512)
+    created_date = models.DateTimeField(default=timezone.now())
