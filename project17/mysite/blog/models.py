@@ -26,3 +26,11 @@ class comments(models.Model):
     text = models.TextField(max_length=512)
     created_date = models.DateTimeField(default=timezone.now())
     approve_comment = models.BooleanField(default=False)
+
+    def approve(self):
+        self.approve_comment = True
+        self.save()
+
+    def __str__(self):
+        return self.text
+    
