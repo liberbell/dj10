@@ -9,3 +9,10 @@ class Post(models.Model):
     text = models.TextField(max_length=512)
     create_date = models.DateTimeField(default=timezone.now())
     published_date = models.DateTimeField(blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def approve_comments(self):
+        return self.comments.filter(approve_comments=True)
