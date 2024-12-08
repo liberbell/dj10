@@ -4,7 +4,7 @@
 <div class="bg-body-tertiary p-3 p-sm-5 mb-4">
     <div class="container">
         <h1>Please Login</h1>
-        <form action="{% url 'basic_app:user_login' %}" method="post">
+        <form action="{% url 'basic_app:login' %}" method="post">
             {% csrf_token %}
             <label for="username">User name:</label>
             <input type="text" name="username" value="" placeholder="Enter username">
