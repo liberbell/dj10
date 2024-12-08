@@ -25,3 +25,4 @@ class comments(models.Model):
     author = models.CharField(max_length=200)
     text = models.TextField(max_length=512)
     created_date = models.DateTimeField(default=timezone.now())
+    approve_comment = models.BooleanField(default=False)
