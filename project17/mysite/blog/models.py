@@ -16,3 +16,7 @@ class Post(models.Model):
 
     def approve_comments(self):
         return self.comments.filter(approve_comments=True)
+    
+    def __str__(self):
+        return self.title
+    
