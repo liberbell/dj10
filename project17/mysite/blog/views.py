@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Post, Comment
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView
 from django.utils import timezone
 
 # Create your views here.
@@ -15,4 +15,5 @@ class PostListView(ListView):
     
 class PostDetailView(DetailView):
     model = Post
-    
+
+class CreatePostView(CreateView):
