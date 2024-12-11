@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Post, Comment
-from django.views.generic import TemplateView, ListView, DetailView, CreateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
 from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
@@ -20,6 +20,13 @@ class PostDetailView(DetailView):
     model = Post
 
 class CreatePostView(LoginRequiredMixin, CreateView):
+    login_url = '/login/'
+    redirect_field_name = "blog/post_detail.html"
+
+    form_class = PostForm
+    model = Post
+
+class PostUpdateView(UpdateView):
     login_url = '/login/'
     redirect_field_name = "blog/post_detail.html"
 
