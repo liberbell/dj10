@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from .models import Post, Comment
-from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from blog.forms import PostForm, CommentsForm
+from django.urls import reverse_lazy
 
 # Create your views here.
 class AboutView(TemplateView):
@@ -32,3 +33,7 @@ class PostUpdateView(UpdateView):
 
     form_class = PostForm
     model = Post
+
+class PostDeleteView(LoginRequiredMixin, DeleteView):
+    model = Post
+    success_url = reverse_lazy("post_list")
