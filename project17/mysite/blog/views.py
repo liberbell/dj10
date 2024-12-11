@@ -4,7 +4,7 @@ from django.views.generic import TemplateView, ListView, DetailView, CreateView
 from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
-from blog.forms import PostForm
+from blog.forms import PostForm, CommentsForm
 
 # Create your views here.
 class AboutView(TemplateView):
