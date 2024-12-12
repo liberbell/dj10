@@ -51,3 +51,6 @@ def add_comment_to_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.metthod == "POST":
         form = CommentsForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.post = post
