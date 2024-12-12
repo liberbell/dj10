@@ -65,4 +65,5 @@ def add_comment_to_post(request, pk):
 def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
-    
+
+    return redirect("post_detail", pk=comment.pk)
