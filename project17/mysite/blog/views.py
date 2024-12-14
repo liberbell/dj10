@@ -45,7 +45,11 @@ class DraftListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return Post.objects.filter(published_date__isnull=True).order_by("created_date")
-    
+
+@login_required
+def post_published(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+
 @login_required
 def add_comment_to_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
