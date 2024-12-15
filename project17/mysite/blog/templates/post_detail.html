@@ -1,4 +1,9 @@
 {% extends "blog/base.html" %}
 {% block content %}
+    <h1 class="posttitle loader"></h1>
 
+    {% if post.published_date %}
+    {% else %}
+      
+    {% endif %}
 {% endblock content %}
