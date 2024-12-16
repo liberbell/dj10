@@ -36,6 +36,8 @@
                     <span class="glyphicon glyphicon-ok"></span>
                 </a>
             {% endif %}
+            <p>{{ comment.text|safe|linebreaks }}</p>
+            <p>Posted by: {{ comment.author }}</p>
           {% endif %}
         {% endfor %}
     </div>
