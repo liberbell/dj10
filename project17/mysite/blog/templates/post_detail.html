@@ -32,8 +32,8 @@
                 <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk }">
                     <span class="glyphicon glyphicon-remove"></span>
                 </a>
-                <a class="btn btn-primary" href="{% url 'comment_remove' pk=post.pk }">
-                    <span class="glyphicon glyphicon-remove"></span>
+                <a class="btn btn-primary" href="{% url 'comment_approve' pk=comment.pk }">
+                    <span class="glyphicon glyphicon-ok"></span>
                 </a>
             {% endif %}
           {% endif %}
