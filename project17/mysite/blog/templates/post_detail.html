@@ -21,5 +21,19 @@
       </a>
     {% endif %}
     <hr>
-    <a class="btn btn-primary btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}"></a>
+    <a class="btn btn-primary btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+
+    <div class="container">
+        {% for coment in post.comment.all %}
+          <br>
+          {% if user.is_authenticated or comment.approve_comment %}
+            {{ comment.created_date }}
+            {% if not comment.approve_comment %}
+                <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk }">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    </div>
 {% endblock content %}
