@@ -10,6 +10,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+.postdate{
+    text-align: center;
+}
+.posttitle{
+    font-family: "Russo One", sans-serif;
+    font-size: 3em;
+}
 
 .loader {
     filter:hue-rotate(0deg);
