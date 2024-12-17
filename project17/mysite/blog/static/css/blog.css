@@ -22,6 +22,10 @@
     font-family: "Montserrat";
     font-size: 1.5em;
 }
+.btn-comment{
+    position: absolute;
+    right: 0px;
+}
 
 .loader {
     filter:hue-rotate(0deg);
