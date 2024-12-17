@@ -15,7 +15,7 @@ class PostListView(ListView):
     model = Post
 
     def get_query_set(self):
-        return Post.objects.filter(published_date__lte=timezone.now.order_by('-published_date'))
+        return Post.objects.filter(published_date__lte=timezone.now).order_by('-published_date')
     
 class PostDetailView(DetailView):
     model = Post
@@ -55,7 +55,7 @@ def post_publish(request, pk):
 @login_required
 def add_comment_to_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    if request.metthod == "POST":
+    if request.method == "POST":
         form = CommentsForm(request.POST)
         if form.is_valid():
             comment = form.save(commit=False)
