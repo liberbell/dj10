@@ -26,6 +26,10 @@
     position: absolute;
     right: 0px;
 }
+.fa-user{
+    width:50px;
+    color:purple;
+}
 
 .loader {
     filter:hue-rotate(0deg);
