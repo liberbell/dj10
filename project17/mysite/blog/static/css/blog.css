@@ -1,4 +1,4 @@
-.techfont {
+.techfont{
     font-family: 'Russo One', sans-serif;
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -21,6 +21,10 @@
 .postcontent{
     font-family: "Montserrat";
     font-size: 1.5em;
+}
+.centerstage{
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn-comment{
     position: absolute;
