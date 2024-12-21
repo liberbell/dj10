@@ -3,11 +3,46 @@
     <h1>New Post</h1>
 
     <div class="editable"></div>
-    <script>var editor = new MediumEditor('.editable');</script>
+    {% comment %} <script>var editor = new MediumEditor('.editable');</script> {% endcomment %}
     <form class="post-form" method="POST" action="">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
     </form> 
+
+    <button id="btnSave">セーブ</button>
+    <button id="btnLoad">ロード</button>
+    <script>
+    var editor = new MediumEditor('.editable', {
+        placeholder: {
+            text: 'テキストを入力してください',
+            hideOnClick: true
+        },
+        toolbar: {
+            allowMultiParagraphSelection: true,
+            buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote'],
+            diffLeft: 0,
+            diffTop: -10,
+            firstButtonClass: 'medium-editor-button-first',
+            lastButtonClass: 'medium-editor-button-last',
+            relativeContainer: null,
+            standardizeSelectionStart: false,
+            static: false,
+            /* options which only apply when static is true */
+            align: 'center',
+            sticky: false,
+            updateOnEmptySelection: false
+        }
+    });
+
+    document.getElementById('btnSave').addEventListener('click', function() {
+    console.log(editor.getContent());
+    localStorage["medium"] = editor.getContent();
+    });
+    document.getElementById('btnLoad').addEventListener('click', function() {
+    console.log(editor.getContent());
+    editor.setContent(localStorage["medium"]);
+    });
+    </script>
 {% endblock content %}
 
