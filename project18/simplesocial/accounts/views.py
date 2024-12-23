@@ -6,7 +6,5 @@ from . import forms
 
 # Create your views here.
 class SignUp(CreateView):
-    """
-    docstring
-    """
-    pass
+    form_class = forms.UserCreateForm
+    success_url = reverse_lazy("login")
