@@ -18,6 +18,10 @@
                   <li><a href="">Groups</a></li>
                   <li><a href="">Create Group</a></li>
                   <li><a href="{% url 'accounts/logout' %}">Log out</a></li>
+                {% else %}
+                  <li><a href="">Groups</a></li>
+                  <li><a href="">Log in</a></li>
+                  <li><a href="">Sign Up</a></li>
                 {% endif %}
             </ul>
         </div>
