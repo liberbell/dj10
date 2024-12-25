@@ -13,7 +13,10 @@
         <div class="container">
             <a class="navbar-brand mynav" href="{% url 'home' %}">Star Social</a>
             <ul class="nav navbar-nav navbar-right">
-
+                {% if user.is_authentiated %}
+                  <li><a href="">Post</a></li>
+                  <li><a href="">Groups</a></li>
+                {% endif %}
             </ul>
         </div>
     </nav>
