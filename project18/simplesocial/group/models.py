@@ -13,4 +13,5 @@ class Group(models.Model):
     pass
 
 class GroupMember(models.Model):
+    group = models.ForeignKey(Group, related_name="memberships", on_delete=models.CASCADE)
     pass
