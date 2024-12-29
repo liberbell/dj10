@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 import misaka
+from django.urls import reverse
 
 from django.contrib.auth import get_user_model
 User = get_user_model()
@@ -23,6 +24,12 @@ class Group(models.Model):
         self.slug = slugify(self.name)
         self.description_html = misaka.html(self.description)
         super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse("group:single", kwargs={"slug": self.slug})
+    
+    class Meta:
+        ordering = ["name"]
 
 class GroupMember(models.Model):
     group = models.ForeignKey(Group, related_name="memberships", on_delete=models.CASCADE)
