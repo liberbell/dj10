@@ -21,7 +21,8 @@ class Group(models.Model):
     
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
-    
+        self.description_html = misaka.html(self.description)
+        super().save(*args, **kwargs)
 
 class GroupMember(models.Model):
     group = models.ForeignKey(Group, related_name="memberships", on_delete=models.CASCADE)
