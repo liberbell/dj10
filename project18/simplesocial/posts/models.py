@@ -20,3 +20,8 @@ class Post(models.Model):
     
     def save(self, *args, **kwargs):
         self.message_html = misaka.html(self.message)
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse("post:single", kwargs={"username":self.user.username, "pk":self.pk})
+    
