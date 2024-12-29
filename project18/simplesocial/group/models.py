@@ -10,7 +10,8 @@ register = template.Library()
 
 # Create your models here.
 class Group(models.Model):
-    pass
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(allow_unicode=True, unique=True)
 
 class GroupMember(models.Model):
     group = models.ForeignKey(Group, related_name="memberships", on_delete=models.CASCADE)
@@ -18,5 +19,8 @@ class GroupMember(models.Model):
 
     def __str__(self):
         return self.user.username
+
+    class Meta:
+        unique_together = ("group", "user")
     
     pass
