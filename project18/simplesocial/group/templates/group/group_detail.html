@@ -13,3 +13,11 @@
     {% endif %}
   </div>
 {% endblock %}
+
+{% block group_content %}
+  <div class="col-md-8">
+    {% if group.posts.count == 0 %}
+      <h2>No post in this group.</h2>
+    {% endif %}
+  </div>
+{% endblock group_content %}
