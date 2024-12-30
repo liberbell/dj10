@@ -9,7 +9,7 @@
       <a href="{% url 'groups:level' slug=group.slug %}" class="btn btn-lg btn-fill warning"><span class="fa-solid fa-arrow-right-from-bracket">Leave</span></a>
 
     {% else }
-      <a href="{% url 'groups:join' slug=group.slug %}" class="btn btn-lg btn-fill warning"><span class="fa-solid fa-arrow-right-from-bracket">Leave</span></a>
+      <a href="{% url 'groups:join' slug=group.slug %}" class="btn btn-lg btn-fill warning"><span class="fa-solid fa-arrow-right-to-bracket">>Join</span></a>
     {% endif %}
   </div>
 {% endblock %}
