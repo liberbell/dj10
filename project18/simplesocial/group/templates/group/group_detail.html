@@ -2,4 +2,11 @@
 
 {% block pregroup %}
   <h1>{{ group.name }}</h1>
+  <h2>Member counts: {{ group.members.count }}</h2>
+
+  <div class="content">
+    {% if user in group.members.all %}
+      <a href="{ url 'groups:level' }"></a>
+    {% endif %}
+  </div>
 {% endblock %}
