@@ -23,7 +23,7 @@
           <a class="list-group-item" href="{% url 'group:single' slug=group.slug %}">
             <h3 class="title list-group-item-heading">{{ group.name }}</h3>
             <div class="list-group-item-text container-fluid">
-
+                {{ group.description_html|safe }}
             </div>
           </a>
         {% endfor %}
