@@ -20,3 +20,4 @@ class PostList(SelectRelatedMixin, generic.ListView):
 
 class UserPosts(generic.ListView):
     model = models.Post
+    template_name = "posts/user_post_list.html"
