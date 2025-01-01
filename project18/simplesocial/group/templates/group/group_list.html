@@ -30,7 +30,8 @@
                         member{{ group.member.count|pluralize}}
                     </div>
                     <div class="col-md-4">
-                        <span class="badge"></span>
+                        <span class="badge">{{ group.posts.count }}</span>
+                        post{{ group.posts.count|pluralize }}
                     </div>
                 </div>
             </div>
