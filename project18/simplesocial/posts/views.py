@@ -15,5 +15,8 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class PostList(SelectRelatedMixin, generic.ListView):
-    model = models.post
+    model = models.Post
     select_related = ("user", "group")
+
+class UserPosts(generic.ListView):
+    model = models.Post
