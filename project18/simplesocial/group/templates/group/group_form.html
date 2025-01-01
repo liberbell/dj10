@@ -3,4 +3,8 @@
 
 {% block group_content %}
   <h4>Create a New Group</h4>
+  <form action="{% url 'group:create' %}" method="post" id="groupForm">
+    {% csrf_token %}
+    {% bootstrap-form form %}
+  </form>
 {% endblock group_content %}
