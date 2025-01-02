@@ -24,5 +24,8 @@ class UserPosts(generic.ListView):
 
     def get_queryset(self):
         try:
-            self.post.user = User.objects.prefetch_related("posts").get(usernam_iexact=self.kwargs.get("username"))
-        return super().get_queryset()
+            self.post.user = User.objects.prefetch_related("posts").get(usernam__iexact=self.kwargs.get("username"))
+        except User.DoesNotExist:
+            raise Http404
+        else:
+            return self.post_user.posts.all()
