@@ -58,3 +58,11 @@ class DeletePost(LoginRequiredMixin, SelectRelatedMixin, generic.DeleteView):
     model = models.Post
     select_related = ("user", "group")
     success_url = reverse_lazy("posts:all")
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        return queryset.filter(user_id=self.request.user.id)
+    
+    def delete(self, *args, **kwargs):
+        messages.success(self.request, "Post Deleted")
+        return super().delete(*args, **kwargs)
