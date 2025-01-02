@@ -29,3 +29,9 @@ class UserPosts(generic.ListView):
             raise Http404
         else:
             return self.post_user.posts.all()
+        
+    def def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["post_user"] = self.post_user
+        return context
+    
