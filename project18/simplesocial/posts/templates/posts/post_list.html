@@ -19,6 +19,11 @@
     <div class="card card-with-shadow">
         <div class="content">
             <h5 class="title">All Groups</h5>
+            <ul class="list-unstyled">
+                {% for other_group in get_other_groups %}
+                  <a href="{% url 'group:single' slug=other_group.group.slug %}"></a>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
