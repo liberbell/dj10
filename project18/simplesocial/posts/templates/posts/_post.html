@@ -14,6 +14,7 @@
         {% if user.is_authenticated and post.user == user %}
           <a href="{% url 'posts:delete' pk=post.pk %}" title="delete" class="btn btn-simple">
             <i class="fa-solid fa-skull-crossbones" aria-hidden="true"></i>
+            <span class="text-danger icon-label">Delete</span>
           </a>
         {% endif %}
     </div>
