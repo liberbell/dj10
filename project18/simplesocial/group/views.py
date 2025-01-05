@@ -51,3 +51,8 @@ class LeaveGroup(LoginRequiredMixin, generic.RedirectView):
             ).get()
         except models.GroupMember.DoesNotExist:
             messages.warning(self.request, "Sorry, you are not in this group.")
+        else:
+            membership.delete()
+            messages.success(self.request, "You have left the group.")
+
+        return super().get(request, *args, **kwargs)
