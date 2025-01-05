@@ -15,3 +15,9 @@ class SingleGroup(generic.DetailView):
 
 class ListGroup(generic.ListView):
     model = Group
+
+class JoinGroup(generic.ListView):
+    pass
+
+class LeaveGroup(generic.ListView):
+    pass
