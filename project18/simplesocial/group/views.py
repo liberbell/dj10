@@ -16,8 +16,13 @@ class SingleGroup(generic.DetailView):
 class ListGroup(generic.ListView):
     model = Group
 
-class JoinGroup(generic.ListView):
-    pass
+class JoinGroup(LoginRequiredMixin, generic.RedirectView):
+    
+    def get_redirect_url(self, *args, **kwargs):
+        """
+        docstring
+        """
+        pass
 
-class LeaveGroup(generic.ListView):
+class LeaveGroup(LoginRequiredMixin, generic.ListView):
     pass
