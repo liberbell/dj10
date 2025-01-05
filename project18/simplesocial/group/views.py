@@ -19,10 +19,7 @@ class ListGroup(generic.ListView):
 class JoinGroup(LoginRequiredMixin, generic.RedirectView):
     
     def get_redirect_url(self, *args, **kwargs):
-        """
-        docstring
-        """
-        pass
+        return reverse('group:single')
 
 class LeaveGroup(LoginRequiredMixin, generic.ListView):
     pass
