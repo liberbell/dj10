@@ -34,5 +34,9 @@ class JoinGroup(LoginRequiredMixin, generic.RedirectView):
         else:
             messages.success(self.request, "You are now a member.")
 
-class LeaveGroup(LoginRequiredMixin, generic.ListView):
-    pass
+        return super().get(request, *args, **kwargs)
+
+class LeaveGroup(LoginRequiredMixin, generic.RedirectView):
+    
+    def get_redirect_url(self, *args, **kwargs):
+        return reverse('group:single', kwargs={'slug':self.kwargs.get('slug')})
