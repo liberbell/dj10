@@ -46,7 +46,7 @@ class LeaveGroup(LoginRequiredMixin, generic.RedirectView):
 
         try:
             membership = models.GroupMember.objects.filter(
-                user = self.reqest.user,
+                user = self.request.user,
                 group__slug = self.kwargs.get("slug")
             ).get()
         except models.GroupMember.DoesNotExist:
