@@ -1,5 +1,5 @@
 {% extends "group/group_base.html" %}
-{% block precontent %}
+{% block pregroup %}
 <div class="col-md-4">
     <div class="content">
         {% if user.is_authenticated %}
@@ -14,7 +14,7 @@
       <a href="{% url 'group:create' %}" class="btn btn-md btn-fill btn-warning"><i class="fa-solid fa-folder-plus">Create New Group</i></a>
     {% endif %}
 </div>
-{% endblock precontent %}
+{% endblock pregroup %}
 
 {% block group_content %}
   <div class="col-md-8">
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <span class="badge">{{ group.members.count }}</span>
-                        member{{ group.member.count|pluralize}}
+                        member{{ group.members.count|pluralize}}
                     </div>
                     <div class="col-md-4">
                         <span class="badge">{{ group.posts.count }}</span>
