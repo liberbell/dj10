@@ -7,7 +7,6 @@
   <div class="content">
     {% if user in group.members.all %}
       <a href="{% url 'groups:level' slug=group.slug %}" class="btn btn-lg btn-fill warning"><i class="fa-solid fa-arrow-right-from-bracket">Leave</i></a>
-
     {% else }
       <a href="{% url 'groups:join' slug=group.slug %}" class="btn btn-lg btn-fill warning"><i class="fa-solid fa-arrow-right-to-bracket">>Join</i></a>
     {% endif %}
