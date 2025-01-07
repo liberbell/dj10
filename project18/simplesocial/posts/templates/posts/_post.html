@@ -4,9 +4,9 @@
     <strong>{{ post.user.username }}</strong>
     <h5 class="media-heading">
         <span class="username">
-            <a href="{% url 'posts:for_user' username=post.user.username %}"></a>
+            <a href="{% url 'posts:for_user' username=post.user.username %}">@{{ post.user.username }}/a>
         </span>
-        <time datetime="" class="time">
+        <time class="time">
             <a href="{% url 'posts:single' username=post.user.username pk=post.pk %}"></a>
         </time>
     </h5>
