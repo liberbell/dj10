@@ -144,30 +144,30 @@ Firefly.prototype.update = function() {
 
 }
     
-    Firefly.prototype.die = function() {
-      persons[this.id] = null;
-      delete persons[this.id];
-    }
+Firefly.prototype.die = function() {
+    persons[this.id] = null;
+    delete persons[this.id];
+}
+
+window.onload = function() {
+    canvas.setAttribute('width', canvasWidth);
+    canvas.setAttribute('height', canvasHeight);
+
+    start();
+}
     
-    window.onload = function() {
-      canvas.setAttribute('width', canvasWidth);
-      canvas.setAttribute('height', canvasHeight);
-    
-      start();
+function start() {
+    instantiatePopulation();
+    animate();
+}
+
+function instantiatePopulation() {
+    var i = 0;
+    while (i < numberOfFirefly) {
+    persons[i] = new Firefly(i);
+    i++;
     }
-    
-    function start() {
-      instantiatePopulation();
-      animate();
-    }
-    
-    function instantiatePopulation() {
-      var i = 0;
-      while (i < numberOfFirefly) {
-        persons[i] = new Firefly(i);
-        i++;
-      }
-    }
+}
     
     function animate() {
       context.clearRect(0, 0, canvas.width, canvas.height);
