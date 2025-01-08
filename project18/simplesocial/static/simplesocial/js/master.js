@@ -102,47 +102,47 @@ Firefly.prototype.walk = function() {
     this.update();
 }
     
-    Firefly.prototype.takeOppositeDirection = function() {
-      // Right -> Left
-      if ((this.direction >= 0 && this.direction < 90) || (this.direction > 270 && this.direction <= 360)) {
-        this.direction = getRandomInt(90, 270);
-        return;
-      }
-      // Left -> Right
-      if (this.direction > 90 && this.direction < 270) {
-        var exept = [90, 270];
-        this.direction = getRandomInt(0, 360, exept);
-        return;
-      }
-      // Down -> Up
-      if (this.direction > 0 && this.direction < 180) {
-        this.direction = getRandomInt(180, 360);
-        return;
-      }
-      // Up -> Down
-      if (this.direction > 180) {
-        this.direction = getRandomInt(0, 180);
-      }
+Firefly.prototype.takeOppositeDirection = function() {
+    // Right -> Left
+    if ((this.direction >= 0 && this.direction < 90) || (this.direction > 270 && this.direction <= 360)) {
+    this.direction = getRandomInt(90, 270);
+    return;
     }
-    
-    Firefly.prototype.update = function() {
-    
-      context.beginPath();
-    
-      context.fillStyle = this.color + this.alpha + ")";
-      context.arc(this.x + (this.width / 2), this.y + (this.height / 2), this.width / 2, 0, 2 * Math.PI, false);
-      context.shadowColor = this.color + this.alpha + ")";
-      context.shadowBlur = this.shadowBlur;
-      context.shadowOffsetX = 0;
-      context.shadowOffsetY = 0;
-      context.fill();
-    
-      if (this.id > 15) {
-        this.alpha -= this.alphaReduction;
-        if (this.alpha <= 0) this.die();
-      }
-    
+    // Left -> Right
+    if (this.direction > 90 && this.direction < 270) {
+    var exept = [90, 270];
+    this.direction = getRandomInt(0, 360, exept);
+    return;
     }
+    // Down -> Up
+    if (this.direction > 0 && this.direction < 180) {
+    this.direction = getRandomInt(180, 360);
+    return;
+    }
+    // Up -> Down
+    if (this.direction > 180) {
+    this.direction = getRandomInt(0, 180);
+    }
+}
+    
+Firefly.prototype.update = function() {
+
+    context.beginPath();
+
+    context.fillStyle = this.color + this.alpha + ")";
+    context.arc(this.x + (this.width / 2), this.y + (this.height / 2), this.width / 2, 0, 2 * Math.PI, false);
+    context.shadowColor = this.color + this.alpha + ")";
+    context.shadowBlur = this.shadowBlur;
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
+    context.fill();
+
+    if (this.id > 15) {
+    this.alpha -= this.alphaReduction;
+    if (this.alpha <= 0) this.die();
+    }
+
+}
     
     Firefly.prototype.die = function() {
       persons[this.id] = null;
