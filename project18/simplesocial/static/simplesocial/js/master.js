@@ -169,37 +169,37 @@ function instantiatePopulation() {
     }
 }
     
-    function animate() {
-      context.clearRect(0, 0, canvas.width, canvas.height);
-    
-      context.beginPath();
-    
-      // Création d'une copie de l'array persons
-      persons_order = persons.slice(0);
-      // Tri par ordre de position sur l'axe y (afin de gérer les z-index)
-      persons_order.sort(function(a, b) {
-        return a.y - b.y
-      });
-    
-      // Paint les instances dans l'ordre trié
-      for (var i in persons_order) {
-        var u = persons_order[i].id;
-        persons[u].walk();
-      }
-    
-      requestAnimationFrame(animate);
+function animate() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    context.beginPath();
+
+    // Création d'une copie de l'array persons
+    persons_order = persons.slice(0);
+    // Tri par ordre de position sur l'axe y (afin de gérer les z-index)
+    persons_order.sort(function(a, b) {
+    return a.y - b.y
+    });
+
+    // Paint les instances dans l'ordre trié
+    for (var i in persons_order) {
+    var u = persons_order[i].id;
+    persons[u].walk();
     }
+
+    requestAnimationFrame(animate);
+}
     
-    canvas.onclick = function(e) {
-      giveBirth(e, birthToGive);
-    }
-    
-    function giveBirth(e, u) {
-      var i = persons.length;
-      persons[i] = new Firefly(i);
-      persons[i].x = e.layerX;
-      persons[i].y = e.layerY;
-    
-      if (u > 1) giveBirth(e, u - 1);
-    }
+canvas.onclick = function(e) {
+    giveBirth(e, birthToGive);
+}
+
+function giveBirth(e, u) {
+    var i = persons.length;
+    persons[i] = new Firefly(i);
+    persons[i].x = e.layerX;
+    persons[i].y = e.layerY;
+
+    if (u > 1) giveBirth(e, u - 1);
+}
     
