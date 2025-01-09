@@ -1,5 +1,5 @@
 var canvas = document.getElementById("canvas"),
-    context = document.getContext("2d"),
+    context = canvas.getContext("2d"),
     canvasWidth = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth),
     canvasHeight = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight),
     requestAnimationFrame = window.requestAnimationFrame ||
