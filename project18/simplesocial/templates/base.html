@@ -13,7 +13,6 @@
 
 
 <body>
-    <canvas id="canvas"></canvas>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" id="navbar">
         <div class="container-fluid">
             <h1><a class="navbar-brand" href="{% url 'home' %}">Star Social</a></h1>
@@ -34,6 +33,7 @@
     {% block content %}
       
     {% endblock content %}
+    <canvas id="canvas"></canvas>
 </body>
 <script type="text/javascript" src="{% static 'simplesocial/js/master.js' %}">
 
