@@ -10,5 +10,7 @@ class MovieAdmin(admin.ModelAdmin):
 
     list_filter = ['release_year', 'length', 'title']
 
+    list_display = ['release_year', 'length', 'title']
+
 admin.site.register(models.Customer)
 admin.site.register(models.Movie, MovieAdmin)
