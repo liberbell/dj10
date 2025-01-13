@@ -12,5 +12,8 @@ class MovieAdmin(admin.ModelAdmin):
 
     list_display = ['title', 'release_year', 'length']
 
+class CustomerAdmin(admin.ModelAdmin):
+    list_display = ['first_name' + ' ' + 'last_name']
+
 admin.site.register(models.Customer)
 admin.site.register(models.Movie, MovieAdmin)
