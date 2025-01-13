@@ -12,6 +12,8 @@ class MovieAdmin(admin.ModelAdmin):
 
     list_display = ['title', 'release_year', 'length']
 
+    list_editable = ['length']
+
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ['first_name' + ' ' + 'last_name']
 
