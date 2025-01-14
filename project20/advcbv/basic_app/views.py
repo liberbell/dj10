@@ -24,3 +24,4 @@ class SchoolListView(ListView):
 
 class SchoolDetailView(DetailView):
     model = models.School
+    template_name = 'basci_app/school_detail.html'
