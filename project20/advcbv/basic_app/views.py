@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import View, TemplateView
+from django.views.generic import View, TemplateView, ListView, DetailView
 from django.http import HttpResponse
+from . import models
 
 # Create your views here.
 def index(request):
@@ -18,3 +19,8 @@ class IndexView(TemplateView):
         context["injectme"] = "BASIC Injection!"
         return context
     
+class SchoolListView(ListView):
+    model = models.School
+
+class SchoolDetailView(DetailView):
+    model = models.School
