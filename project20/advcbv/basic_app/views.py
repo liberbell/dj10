@@ -19,6 +19,9 @@ class IndexView(TemplateView):
         context["injectme"] = "BASIC Injection!"
         return context
     
+class IndexView(TemplateView):
+    template_name = "index.html"
+    
 class SchoolListView(ListView):
     context_object_name = "schools"
     model = models.School
