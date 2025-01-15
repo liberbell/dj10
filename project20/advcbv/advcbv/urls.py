@@ -23,5 +23,5 @@ urlpatterns = [
     path('index/', views.index, name="index"),
     path('cbview/', views.CBView.as_view(), name="cbview"),
     path('tmpview/', views.IndexView.as_view(), name="tmpview"),
-    path('basic_app/', include("basic_app.urls")),
+    path('basic_app/', include("basic_app.urls", namespace="basic_app")),
 ]
