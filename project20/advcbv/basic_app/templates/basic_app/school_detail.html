@@ -1,1 +1,12 @@
-{% extends ".html" %}
+{% extends "basic_app/basic_app_base.html" %}
+
+{% block body_block %}
+<div class="bg-body-tertiary p-3 p-sm-5 mb-4">
+    <div class="container">
+        <h1 class="display-4">Welcome to the School Detail Page</h1>
+        <h2>School Detail: </h2>
+        <p>Name: {{ school_detail.name }}</p>
+        <p>Pricipal: {{ school_detail.principal }}</p>
+    </div>
+</div>
+{% endblock body_block %}
