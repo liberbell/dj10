@@ -20,6 +20,7 @@ class IndexView(TemplateView):
         return context
     
 class SchoolListView(ListView):
+    context_object_name = "schools"
     model = models.School
 
 class SchoolDetailView(DetailView):
