@@ -38,3 +38,6 @@ class SchoolCreateView(CreateView):
 class SchoolUpdateView(UpdateView):
     fields = ("name", "principal")
     model = models.School
+
+class SchoolDeleteView(DeleteView):
+    model = models.School
