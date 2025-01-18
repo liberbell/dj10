@@ -11,7 +11,7 @@ class School(models.Model):
         return self.name
     
     def get_absolute_url(self):
-        return reverse("model_detail", kwargs={"pk": self.pk})
+        return reverse("basic_app:detail", kwargs={"pk": self.pk})
     
     
 class Student(models.Model):
